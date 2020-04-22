@@ -1,0 +1,64 @@
+body{
+    font-family: 'Merriweather', serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container section{
+    display: flex;
+}
+
+.works{
+    margin-right: 20px;
+    flex-basis: calc(30% - 20px);
+    list-style: none;
+    counter-reset: new-counter; 
+}
+
+.works-item:before{
+    content: counter(new-counter);
+    counter-increment: new-counter;
+    display: inline-block;
+    font-size: 1.2rem;
+    background: #8FD4C1;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+}
+
+.works-item a{    
+    padding-left: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: .4em 1rem;
+    margin: .5em 0;
+    background: #DAD2CA;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+}
+
+.works-item a:hover{
+    background: #E9E4E0;
+}
+
+.works-item a:hover .works-item:before{
+    color: red;
+}
+
+.cursor-image img{
+    max-width: 100%;
+}
