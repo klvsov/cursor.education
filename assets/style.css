@@ -14,11 +14,12 @@ body{
 .container section{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .works{
-    width: calc(100% / 12 * 4 - 20px);
+    width: calc(100% / 12 * 6 - 20px);
     margin-right: 20px;
     list-style: none;
     counter-reset: new-counter; 
@@ -37,10 +38,6 @@ body{
     text-align: center;
     font-weight: bold;
     border-radius: 2em;
-}
-
-.works-item{
-    text-align: center;
 }
 
 .works-item a{    
@@ -65,18 +62,18 @@ body{
     color: red;
 }
 
-.cursor-image{
-    width: calc(100% / 12 * 7 - 20px);
+.chart{
+    width: calc(100% / 12 * 5 - 20px);
+    text-align: center;
+}
+
+.chart .donut{
     margin: 0 auto;
 }
 
-.cursor-image img{
-    width: 100%;
-}
-
-@media screen and (max-width: 760px){
+@media screen and (max-width: 920px){
     
-    .cursor-image{
+    .chart{
         width: calc(100% - 20px)
     }
 
