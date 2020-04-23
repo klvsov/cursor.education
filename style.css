@@ -13,12 +13,13 @@ body{
 
 .container section{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .works{
+    width: calc(100% / 12 * 4 - 20px);
     margin-right: 20px;
-    flex-basis: calc(30% - 20px);
     list-style: none;
     counter-reset: new-counter; 
 }
@@ -36,6 +37,10 @@ body{
     text-align: center;
     font-weight: bold;
     border-radius: 2em;
+}
+
+.works-item{
+    text-align: center;
 }
 
 .works-item a{    
@@ -60,6 +65,22 @@ body{
     color: red;
 }
 
+.cursor-image{
+    width: calc(100% / 12 * 7 - 20px);
+    margin: 0 auto;
+}
+
 .cursor-image img{
-    max-width: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 760px){
+    
+    .cursor-image{
+        width: calc(100% - 20px)
+    }
+
+    .works{
+        width: calc(100% - 20px);
+    }
 }
