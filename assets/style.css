@@ -20,7 +20,6 @@ body{
 
 .works{
     width: calc(100% / 12 * 6 - 20px);
-    margin-right: 20px;
     list-style: none;
     counter-reset: new-counter; 
 }
