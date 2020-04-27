@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Поняття Front-End. HTML: Home Work</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Table and form</h1>
+        <main>
+            <table>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Phone</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Ivan</td>
+                    <td>Ivanov</td>
+                    <td>+380123456789</td>
+                    <td>ivan.ivanov@example.com</td>
+                </tr>
+                <tr>
+                    <td>Petro</td>
+                    <td>Petrov</td>
+                    <td>+380129876543</td>
+                    <td>petro.petrov@example.com</td>
+                </tr>
+                <tr>
+                    <td>Sydor</td>
+                    <td>Sydorov</td>
+                    <td>+380121234567</td>
+                    <td>sydor.sydorov@example.com</td>
+                </tr>
+            </table>
+            <form action="post">
+                <p>
+                    <label for="name">First name:</label><br>
+                    <input type="text" id="name" required placeholder="Enter the name">
+                </p>    
+                <p>
+                    <label for="last-name">Last name:</label><br>
+                    <input type="text" id="last-name" required placeholder="Enter the last name">
+                </p>
+                <p>What your sex?</p>
+                <input type="radio" id="male" value="male" name="sex" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="female" name="sex">
+                <label for="female">Female</label>
+                <p><textarea>Enter the question</textarea></p>
+                <label for="town">Choose the town:</label>
+                <select id="town">
+                    <option value="example" selected disabled>Choose the town</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Vinnytsia">Vinnytsia</option>
+                </select>
+                <p>Choose a language:</p>
+                <input type="checkbox" id="uk">
+                <label for="uk">Українська</label><br>
+                <input type="checkbox" id="ru">
+                <label for="ru">Русский</label><br>
+                <input type="checkbox" id="en">
+                <label for="en">English</label><br>
+                <input type="submit" value="Send">
+            </form>
+        </main>
+    </div>
+    
+
+</body>
+</html>
