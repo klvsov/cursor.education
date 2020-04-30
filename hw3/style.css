@@ -1,0 +1,132 @@
+body{
+    background: #2c2c2c;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table{
+    width: 600px;
+    border-spacing: 0;
+    border: 2px solid #393939;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #bebebe;
+}
+
+th .triangle{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    cursor: pointer;
+}
+
+th .triangle:hover{
+    border-top: 8px solid lightgreen;
+    transition: .5s;
+}
+
+span.last{
+    top: 22px;
+}
+
+.triangle:nth-child(2){
+    left: 79px;
+}
+
+th, td{
+    border-bottom: 2px solid #393939;
+    padding: 10px;
+    text-align: left;
+}
+
+th:first-child{
+    width: 50%;
+    position: relative;
+}
+
+th:last-child, td:last-child{
+    text-align: right;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.date-td{
+    color: #4e4e4e;
+}
+
+table:last-child tr td:first-child{
+    vertical-align: middle;
+}
+
+table:last-child tr td:first-child img{
+    width: 20px;
+    vertical-align: middle;
+}
+
+input[type="search"]{
+    width: 150px;
+    background-color: #444444;
+    background-image: url('./icon/search.png');
+    background-size: 15px;
+    background-position: left 2% center;
+    background-repeat: no-repeat;
+    padding: 5px 5px 5px 25px;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    outline: none;
+}
+
+input::placeholder{
+    color: #6b6b6b;
+}
+
+.box{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #2c2c2c;
+    color: #2c2c2c;
+    border-radius: 3px;
+    border: 1px solid #4e4e4e;
+}
+
+.box__active{
+    background: #18a0fa;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #18a0fa;
+}
+    
+@media screen and (max-width: 620px){
+    table{
+        width: calc(100% - 20px);
+        margin: auto;
+        text-align: center;
+    }
+    th, td{
+        padding: 5px;
+    }
+
+    input[type=search]{
+        width: 80px;
+    }
+
+    input[type=search]::placeholder{
+        color: transparent;
+    }
+}

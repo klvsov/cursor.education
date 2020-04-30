@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tables</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Name<span class="triangle"></span></th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>file.pdf</td>
+                <td class="date-td">3 mins ago</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+            <tr>
+                <td>file.pdf</td>
+                <td class="date-td">Yesterday</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+            <tr>
+                <td>file.pdf</td>
+                <td class="date-td">June 1st, 2019</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th><span id="box-Name" class="box">&ndash;</span>Name<span class="triangle"></span></th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><span class="box box-file">&#10004;</span>file.pdf</td>
+                <td class="date-td">3 mins ago</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+            <tr>
+                <td><span class="box box-file">&#10004;</span>file.pdf</td>
+                <td class="date-td">Yesterday</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+            <tr>
+                <td><span class="box box-file">&#10004;</span>file.pdf</td>
+                <td class="date-td">June 1st, 2019</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+        </table> 
+        <table>
+            <tr>
+                <th>Name<span class="triangle last"></span></th>
+                <th>Date</th>
+                <th><input type="search" id="search" placeholder="Search"></th>
+            </tr>
+            <tr>
+                <td><img src="./icon/file.svg" alt="File"> file.pdf</td>
+                <td class="date-td">3 mins ago</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+            <tr>
+                <td><img src="./icon/file.svg" alt="File"> file.pdf</td>
+                <td class="date-td">Yesterday</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+            <tr>
+                <td><img src="./icon/file.svg" alt="File"> file.pdf</td>
+                <td class="date-td">June 1st, 2019</td>
+                <td>&#8226;&#8226;&#8226;</td>
+            </tr>
+        </table>   
+    </div>
+    <script src="./switches.js"></script>
+</body>
+</html>
