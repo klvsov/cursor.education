@@ -17,6 +17,14 @@ table{
     color: #bebebe;
 }
 
+table tr td:last-child{
+    color: #ffffff;
+}
+
+table:first-child tr td:last-child{
+    color: #5d5d5d;
+}
+
 th .triangle{
     width: 0;
     height: 0;
