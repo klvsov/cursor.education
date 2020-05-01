@@ -29,11 +29,6 @@ th .triangle{
     cursor: pointer;
 }
 
-th .triangle:hover{
-    border-top: 8px solid lightgreen;
-    transition: .5s;
-}
-
 span.last{
     top: 22px;
 }
@@ -77,12 +72,13 @@ input[type="search"]{
     background-color: #444444;
     background-image: url('./icon/search.png');
     background-size: 15px;
-    background-position: left 2% center;
+    background-position: left 5% center;
     background-repeat: no-repeat;
     padding: 5px 5px 5px 25px;
     border: 1px solid #868686;
     border-radius: 5px;
     outline: none;
+    color: #6b6b6b;
 }
 
 input::placeholder{
@@ -115,7 +111,7 @@ input::placeholder{
 @media screen and (max-width: 620px){
     table{
         width: calc(100% - 20px);
-        margin: auto;
+        margin: 10px auto;
         text-align: center;
     }
     th, td{
