@@ -23,9 +23,13 @@ body{
     margin-bottom: 10px;
 }
 
+.works-item{
+    color: #006957;
+}
+
 .works-item:hover{
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #006957;
+    border-color: #006957;
     color: #fff;
     cursor: pointer;
 }
