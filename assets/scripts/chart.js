@@ -1,10 +1,10 @@
 $.fn.peity.defaults.donut = {
     delimiter:null,
-    fill: ["#ff9900","#fff4dd","#ffd592"],
-    height:300,
+    fill: ["#006957","#D27435","#ffd592"],
+    height:280,
     innerRadius:null,
-    radius: 8,
-    width:300
+    radius: 10,
+    width:280
 }
 
 $(".donut").peity("donut");
