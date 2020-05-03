@@ -1,6 +1,6 @@
 $.fn.peity.defaults.donut = {
     delimiter:null,
-    fill: ["#006957","#D27435","#ffd592"],
+    fill: ["#006957","#DE9A6C","#ffd592"],
     height:280,
     innerRadius:null,
     radius: 10,
