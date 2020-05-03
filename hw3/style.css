@@ -42,10 +42,6 @@ span.last{
     top: 22px;
 }
 
-.triangle:nth-child(2){
-    left: 79px;
-}
-
 th, td{
     border-bottom: 2px solid #393939;
     padding: 10px;
@@ -74,6 +70,10 @@ table:last-child tr td:first-child{
 table:last-child tr td:first-child img{
     width: 20px;
     vertical-align: middle;
+}
+
+.name, .file-name{
+    cursor: pointer;
 }
 
 input[type="search"]{
@@ -124,6 +124,10 @@ input[type="search"]:focus{
     color: #fff;
     border-radius: 3px;
     border: 1px solid #18a0fa;
+}
+
+#triangle_middle{
+    left: 80px;
 }
     
 @media screen and (max-width: 620px){
