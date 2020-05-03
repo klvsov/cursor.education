@@ -30,8 +30,10 @@ body{
 .works-item:hover{
     background-color: #006957;
     border-color: #006957;
+}
+
+.works-item:hover a{
     color: #fff;
-    cursor: pointer;
 }
 
 a:hover{
@@ -44,7 +46,9 @@ a:hover{
 }
 
 .chart .donut{
+    display: block!important;
     margin: 0 auto;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 920px){
