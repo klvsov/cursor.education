@@ -121,6 +121,7 @@ input[type="submit"]{
     opacity: 0;
 }
 .radio__text {
+    display: block;
     position: relative;
     margin-bottom: 10px;
     padding: 0 0 0 35px;
