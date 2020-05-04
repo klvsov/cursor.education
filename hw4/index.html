@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Identic</title>
+    <title>CloudBudget</title>
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <header>
-                <div class="logo">Bin<span>go</span></div>
+    <div class="main-screen">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="./images/cloud.svg" alt="small cloud" class="logo_image">
+                    <span class="logo_header">CloudBudget</span></a>
+                </div>
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>Strategy</li>
-                        <li>About</li>
-                        <li>Clients</li>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Sign up</a></li>
                     </ul>
                 </nav>
-                <div class="login">
-                    <span>Sign up</span>
-                    <img src="./icon/add-to-basket.svg" alt="basket">
-                </div>
-            </header>
-            <section class="main-info">
-                <div class="main-col col-1">
-                    <h1>Identic</h1>
-                    <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed.</div>
-                    <button class="btn-pref"></button>
-                </div>
-                <div class="main-col col-2">
-                    <div class="triangle-small"></div>
-                    <div class="triangle-big"></div>
-                    <div class="square"></div>
-                    <div class="slider">
-                        <div class="slider-item">
-                            <h2>Marketing Agency</h2>
-                            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, reiciendis? Ullam, doloribus hic autem consequuntur accusantium quis saepe id!</div>
+                <div class="wrap">
+                    <div class="lang">
+                        <div class="lang_flag">
+                            <img src="./images/flag-usa.png" alt="flag of USA">
                         </div>
-                        <button class="prev">&#8592;</button>
-                        <button class="next">	&#8594;</button>
+                        <div class="lang_text">
+                            en
+                        </div>
+                        <div class="lang_choose"><i class="fas fa-caret-down"></i></div>
                     </div>
-                    <button class="start">Start now</button>
+                    <button class="login">Login</button>
                 </div>
-                <div class="partners">
-                    <ul>
-                        <li>Baldwin</li>
-                        <li>Hogan</li>
-                        <li>Sulzer</li>
-                        <li>flickr</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="main-header">CloudBudget</h1>
+                <p class="main-header_sub">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99</p>
+                <button class="main-header_btn">Sign Up</button> 
+            </div>
+        </main>
     </div>
 </body>
+
 </html>
