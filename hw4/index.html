@@ -20,6 +20,9 @@
                     <a href="#"><img src="./images/cloud.svg" alt="small cloud" class="logo_image">
                         <span class="logo_header">CloudBudget</span></a>
                 </div>
+                <div class="menu-bar">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <nav>
                     <ul>
                         <li><a href="#">Overview</a></li>
@@ -32,18 +35,20 @@
                 <div class="wrap">
                     <div class="lang">
                         <div class="lang_flag">
-                            <img src="./images/flag-usa.png" alt="flag of USA">
+                            <img src="./images/flag-usa.png" alt="flag of USA" class="flag">
                         </div>
                         <div class="lang_text">
-                            en
+                            <select id="lang">
+                                <option value="en">EN</option>
+                                <option value="ua">UA</option>
+                                <option value="ru">RU</option>
+                            </select>
                         </div>
-                        <div class="lang_choose"><i class="fas fa-caret-down"></i></div>
                     </div>
                     <button class="login">Login</button>
                 </div>
             </header>
         </div>
-
         <main>
             <div class="container">
                 <h1 class="main-header">CloudBudget</h1>
@@ -53,5 +58,7 @@
             </div>
         </main>
     </div>
+    <script src="./js/menu-toggle.js"></script>
+    <script src="./js/select_lang.js"></script>
 </body>
 </html>

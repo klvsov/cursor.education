@@ -54,8 +54,9 @@ header nav ul li{
     cursor: pointer;
 }
 
-i.menu{
-    display: none;
+header nav ul li:hover{
+    border-bottom: 1px solid yellow;
+    color: yellow;
 }
 
 nav+.wrap{
@@ -70,13 +71,35 @@ nav+.wrap{
     align-items: center;
 }
 
+.lang .lang_flag{
+    width: 32px;
+    height: 32px;
+}
+
+.lang .lang_flag img{
+    width: 100%;
+}
+
 .lang .lang_text{
     margin-left: 11px;
+}
+
+.lang .lang_text select{
+    background: transparent;
+    border: none;
+    color: #fff;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    outline: none;
+}
+
+.lang .lang_text select option{
+    background: #e6574a;
 }
 
 .lang .lang_choose{
@@ -108,6 +131,12 @@ button.login:hover{
     transition: linear .5s;
 }
 
+.menu-bar{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+
 main{
     text-align: center;
 }
@@ -135,6 +164,7 @@ main{
 
 .main-header_btn{
     margin-top: 39px;
+    margin-bottom: 187px;
     width: 160px;
     height: 50px;
     background: #FFFFFF;
@@ -161,7 +191,7 @@ main{
     }
 
     header nav{
-        order: 2;
+        order: 3;
         margin: 40px 20px;
     }
 
@@ -175,13 +205,23 @@ main{
         max-width: 540px;
     }
 
+    .menu-bar{
+        display: block;
+        order: 2;
+        margin-right: auto;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
     header nav{
+        width: 100%;
         margin: 15px;
         padding: 10px
     }
 
     header nav ul{
-        background: #6e5dcced;
+        display: none;
+        background: #3d673a7d;
     }
 
     header nav ul li{
@@ -215,6 +255,11 @@ main{
     .container{
         max-width: 420px;
     }
+
+    .menu-bar{
+        margin-top: 0;
+    }
+
 
     .logo, nav+.wrap{
         margin: 10px auto;
