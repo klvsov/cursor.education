@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/logo-white.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>CloudBudget</title>
 </head>
+
 <body>
     <div class="main-screen">
-        <header>
-            <div class="container">
+        <div class="container">
+            <header>
                 <div class="logo">
                     <a href="#"><img src="./images/cloud.svg" alt="small cloud" class="logo_image">
-                    <span class="logo_header">CloudBudget</span></a>
+                        <span class="logo_header">CloudBudget</span></a>
                 </div>
+                <i class="menu fas fa-bars"></i>
                 <nav>
                     <ul>
                         <li><a href="#">Overview</a></li>
@@ -41,16 +43,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
                     </div>
                     <button class="login">Login</button>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
+
         <main>
             <div class="container">
                 <h1 class="main-header">CloudBudget</h1>
-                <p class="main-header_sub">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99</p>
-                <button class="main-header_btn">Sign Up</button> 
+                <p class="main-header_sub">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial
+                    of Up to €4.99</p>
+                <button class="main-header_btn">Sign Up</button>
             </div>
         </main>
     </div>
+    <script src="./js/menu-toggle.js"></script>
 </body>
-
 </html>
