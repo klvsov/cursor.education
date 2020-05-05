@@ -201,7 +201,7 @@ main{
 
     .main-header{
         margin-top: 15vh;
-        font-size: 7vmax;
+        font-size: 7vmin;
     }
 
     .main-header_sub{
