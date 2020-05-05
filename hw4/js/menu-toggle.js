@@ -4,7 +4,6 @@ window.onload = function(){
     menu = document.querySelector('header nav ul');
 
     menu_btn.addEventListener('click', function(){
-
         if(menu.hasAttribute('style')){
             menu.removeAttribute('style')
         } else{
