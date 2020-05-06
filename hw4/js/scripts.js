@@ -7,7 +7,7 @@ window.onload = function(){
         if(menu.hasAttribute('style')){
             menu.removeAttribute('style')
         } else{
-            menu.setAttribute('style', 'display: block');
+            menu.setAttribute('style', 'opacity: 1');
         }
     })
 
