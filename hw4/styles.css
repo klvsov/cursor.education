@@ -203,7 +203,7 @@ main{
     position: absolute;
     top: calc(50% - 123px);
     left: calc(50% - 200px);
-    max-width: 400px;
+    width: 400px;
     background: #efa3abd9;
     padding: 20px;
     text-align: center;
