@@ -201,7 +201,7 @@ main{
 
 .overlay .enter{
     position: absolute;
-    top: calc(50% - 246px);
+    top: calc(50% - 123px);
     left: calc(50% - 200px);
     min-width: 400px;
     background: #efa3abd9;
