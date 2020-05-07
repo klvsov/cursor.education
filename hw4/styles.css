@@ -188,6 +188,81 @@ main{
     transition: linear .5s;
 }
 
+
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+}
+
+.overlay .enter{
+    position: absolute;
+    top: calc(50%);
+    left: calc(50% - 200px);
+    min-width: 400px;
+    background: #efa3abd9;
+    padding: 20px;
+    text-align: center;
+}
+
+.enter .close{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.enter input{
+    margin-bottom: 20px;
+    min-width: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.enter input[type="text"]:focus, .enter input[type="password"]:focus{
+    box-shadow: 0 0 7px cyan;
+}
+
+.input_error{
+    box-shadow: 0 0 7px red;
+}
+
+.enter input[type="submit"]{
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ED4C5C;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.enter input[type="submit"]:hover{
+    background-color: #ED4C5C;
+    color: #fff;
+    transition: linear .5s;
+}
+
+.enter label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.error{
+    font-size: 1.2rem;
+    color: red;
+}
+
 @media screen and (max-width: 1110px){
     .container{
         max-width: 1080px;
