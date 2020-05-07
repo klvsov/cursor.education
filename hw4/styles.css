@@ -54,8 +54,8 @@ header nav ul li{
 }
 
 header nav ul li:hover{
-    border-bottom: 1px solid yellow;
     color: yellow;
+    transform: scaleX(1.1);
 }
 
 nav+.wrap{
@@ -201,7 +201,7 @@ main{
 
 .overlay .enter{
     position: absolute;
-    top: calc(50%);
+    top: calc(50% - 246px);
     left: calc(50% - 200px);
     min-width: 400px;
     background: #efa3abd9;
