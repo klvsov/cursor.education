@@ -59,6 +59,10 @@ window.onload = function(){
     let btn_login = document.querySelector('.login');
     let overlay = document.querySelector('.overlay');
     let form = document.querySelector('form');
+    let form_name = document.forms[0].name;
+    let form_pass = document.forms[0].pass;
+    let form_enter = document.forms[0].enter;
+    let er_login = document.querySelector('.error');
 
     btn_close.addEventListener('click', function(){
         overlay.style.display = 'none';
@@ -66,15 +70,16 @@ window.onload = function(){
     })
 
     btn_login.addEventListener('click', function(){
+        er_login.textContent = "";
+        form_name.classList.remove('input_error'); 
+        form_pass.classList.remove('input_error');
+        form_name.value = '';
+        form_pass.value = '';
         overlay.style.display = 'block';
         form.style.display = 'block';
     })
 
-    let form_login = document.forms[0];
-    let form_name = document.forms[0].name;
-    let form_pass = document.forms[0].pass;
-    let form_enter = document.forms[0].enter;
-    let er_login = document.querySelector('.error');
+    
 
     form_enter.addEventListener('click', function(event){
         event.preventDefault();
