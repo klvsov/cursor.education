@@ -149,6 +149,11 @@ html{
     font-weight: normal;
     font-size: 16px;
     color: rgba(19, 39, 67, 0.5);
+    outline: none;
+}
+
+.contact .contact_form input:focus, .contact .contact_form select:focus{
+    box-shadow: 0 0 7px cyan;
 }
 
 .contact .contact_form input:first-child{
