@@ -174,7 +174,7 @@ html{
     margin-top: 24px;
     padding: 17px 34px;
     background: #ED4C5C;
-    border: 1.5px solid #ED4C5C;
+    border: 1.5px solid transparent;
     border-radius: 6px;
     font-style: normal;
     font-weight: normal;
