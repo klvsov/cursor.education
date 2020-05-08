@@ -153,7 +153,7 @@ html{
 }
 
 .contact .contact_form input:focus, .contact .contact_form select:focus{
-    box-shadow: 0 0 7px cyan;
+    box-shadow: 0 0 7px yellow;
 }
 
 .contact .contact_form input:first-child{
