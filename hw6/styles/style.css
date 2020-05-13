@@ -272,16 +272,30 @@ header .btn .btn_demo:hover, .try .try_demo:hover{
     color: #FFFFFF;
 }
 
-.testimonials .testimonials_item{
-    max-width: 950px;
-    margin: 0 auto;
-    margin-top: 90px;
+.testimonials .testimonial_item{
+    position: absolute;
     display: flex;
     background: #FFFFFF;
-    box-shadow: 0px 20px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 90px;
     padding-top: 80px;
     padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.testimonials .testimonial_item:first-child{
+    opacity: 1;
+}
+
+.testimonials .testimonials_item{
+    max-width: 950px;
+    min-height: 450px;
+    overflow: hidden;
     position: relative;
 }
 
@@ -327,7 +341,7 @@ header .btn .btn_demo:hover, .try .try_demo:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .testimonials .controls .dots{
@@ -585,6 +599,10 @@ footer .chat{
         margin-bottom: 20px;
     }
 
+    .testimonials .testimonials_item{
+        min-height: 500px;
+    }
+
     .testimonials > .container{
         padding-top: 20px;
         padding-bottom: 20px;
@@ -597,9 +615,12 @@ footer .chat{
     }
 
     .testimonials .testimonials_item{
+        text-align: center;
+    }
+
+    .testimonials .testimonial_item{
         flex-wrap: wrap;
         padding: 10px 30px;
-        text-align: center;
     }
 
     .testimonials .testimonials_profile_info .comment{
@@ -728,12 +749,23 @@ footer .chat{
     header nav ul{
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
+    }
+
+    header nav ul li{
+        flex-basis: 35%;
+        margin-top: 10px;
+        margin-right: 0;
     }
 }
 
 @media screen and (max-width: 365px){
     body{
         overflow: hidden;
+    }
+
+    .testimonials .testimonials_item{
+        min-height: 530px;
     }
 
     footer .short_info{
