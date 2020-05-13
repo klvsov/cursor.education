@@ -20,7 +20,7 @@ window.onload = function(){
 
     prevBtn.addEventListener('click', function(){
         slides[i].style.opacity = '0';
-        slides[i].style.transform = 'translateX(50%)';
+        slides[i].style.transform = 'translateX(-50%)';
         dots[i].classList.remove('active');
         i--;
         if(i < 0){
