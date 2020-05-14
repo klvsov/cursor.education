@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="scrollToTop">
         <div class="container">
             <div class="header_wrapper">
                 <div class="logo">
@@ -21,10 +21,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Signup</a></li>
+                        <li><a class="scroll" href="#scrollToAbout" class="active_header_link">About</a></li>
+                        <li><a class="scroll" href="#scrollToHelp">Help</a></li>
+                        <li><a class="scroll" href="#scrollToFeatures">Features</a></li>
+                        <li><a class="scroll" href="#scrollToSignup">Signup</a></li>
                     </ul>
                 </nav>
                 <div class="btn">
@@ -37,7 +37,7 @@
         <div class="container">
             <div class="about_wrapper">
                 <div class="about_info">
-                    <h1 class="about_header" id="about">Save your data about here.</h1>
+                    <h1 class="about_header" id="scrollToAbout">Save your data about here.</h1>
                     <p class="about_description">Data Warehouse is a data about area that has been
                         tested for security, so you can store your data here
                         safely but not be afraid of being stolen by others.</p>
@@ -55,7 +55,7 @@
             <div class="help_wrapper">
                 <div class="help_bg"></div>
                 <div class="help_info">
-                    <h2 class="help_header" id="help">We are a high-level data storage bank</h2>
+                    <h2 class="help_header" id="scrollToHelp">We are a high-level data storage bank</h2>
                     <p class="help_text">The place to store various data that you can access at any time through the
                         internet and where you can carry it.
                         This very flexible storage area has a high level of security. To enter into your own data you
@@ -66,7 +66,7 @@
     </section>
     <section class="features">
         <div class="container">
-            <h2 class="features_header" id="features">Features</h2>
+            <h2 class="features_header" id="scrollToFeatures">Features</h2>
             <p class="features_description">Some of the features and advantages that we provide for those of you who
                 store data in this Data Warehouse.</p>
             <div class="features_items">
@@ -183,7 +183,7 @@
     <section class="try">
         <div class="container">
             <div class="try_info">
-                <h2 class="try_header">Try for free!</h2>
+                <h2 class="try_header" id="scrollToSignup">Try for free!</h2>
                 <p class="try_description">Get limited 1 week free try our features!</p>
             </div>
             <div class="try_btn">
@@ -238,7 +238,7 @@
             </div>
             <div class="short_info">
                 <div class="text_info">
-                    <p class="copy">© Datawarehouse™, 2020. All rights reserved.</p>
+                    <p class="copy">&copy; Datawarehouse™, 2020. All rights reserved.</p>
                     <p class="reg_number">Company Registration Number: 21479524.</p>
                 </div>
                 <div class="chat">
@@ -247,6 +247,7 @@
             </div>
         </div>
     </footer>
-    <script src="./scripts/slider.js"></script>
+    <div class="ontop"><a class="scroll" href="#scrollToTop">&#8593;</a></div>
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>

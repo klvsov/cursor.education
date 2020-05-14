@@ -30,5 +30,18 @@ window.onload = function(){
         slides[i].style.transform = 'translateX(0)';
         dots[i].classList.add('active');
     })
-    
+
+    let anchors = document.querySelectorAll('a.scroll');
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+            let blockID = anchor.getAttribute('href')
+            
+            document.querySelector(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                alignToTop: true
+            })
+        })
+    }
 }
