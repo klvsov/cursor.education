@@ -1,20 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/images/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>CloudBudget</title>
 </head>
+
 <body>
-    <section class="save">
+    <div class="main-screen">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <a href="#"><img src="./images/cloud.svg" alt="small cloud" class="logo_image">
+                        <span class="logo_header">CloudBudget</span></a>
+                </div>
+                <div class="menu-bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="translate">Overview</a></li>
+                        <li><a href="#" class="translate">Features</a></li>
+                        <li><a href="#" class="translate">Technology</a></li>
+                        <li><a href="#" class="translate">Contact</a></li>
+                        <li><a href="#" class="translate">Sign up</a></li>
+                    </ul>
+                </nav>
+                <div class="wrap">
+                    <div class="lang">
+                        <div class="lang_flag">
+                            <img src="./images/flag-usa.png" alt="flag of USA" class="flag">
+                        </div>
+                        <div class="lang_text">
+                            <select id="lang">
+                                <option value="en">EN</option>
+                                <option value="ua">UA</option>
+                                <option value="ru">RU</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="login translate">Login</button>
+                </div>
+            </header>
+        </div>
+        <main>
+            <div class="container">
+                <h1 class="main-header">CloudBudget</h1>
+                <p class="main-header_sub translate">Cloud budget management for everyone. Only €69.95 a Month After a 7
+                    Day Trial
+                    of Up to €4.99</p>
+                <button class="main-header_btn translate">Sign Up</button>
+            </div>
+        </main>
+    </div>
+    <sectiom class="management">
+        <div class="container">
+            <div class="management_wrapper">
+                <div class="management_text">
+                    <h2 class="management_header">Easy to Use Cloud Budget Management Software</h2>
+                    <p class="management_description">Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</p>
+                    <a class="management_link">Learn More</a>
+                </div>
+                <div class="management_video">
+                    <div class="play">
+                        <img src="./images/play.png" alt="play button" class="play_img">
+                    </div>
+                    <img src="./images/video.jpg" alt="video">
+                </div>
+            </div>
+        </div>
+    </sectiom>
+    <section class="features">
+        <div class="container">
+            <h2 class="features_header">Features</h2>
+            <div class="features_wrapper">
+                <div class="features-item">
+                    <div class="features_img"><img src="./images/money.jpg" alt="money"></div>
+                    <div class="features_info">
+                       <h3 class="features_title">Supports All Currencies and Cards</h3>
+                        <p class="features_description">We support all popular currencies and is fully customizable to add</p>
+                        <a href="" class="features_link">Read more</a> 
+                    </div>
+                </div>
+                <div class="features-item">
+                    <div class="features_img"><img src="./images/phone.jpg" alt="smartphone"></div>
+                    <div class="features_info">
+                        <h3 class="features_title">Manage your expenses on the go</h3>
+                        <p class="features_description">You can access your account from anywhere in the world on any device</p>
+                        <a href="" class="features_link">Read more</a>
+                    </div>
+                </div>
+                <div class="features-item">
+                    <div class="features_img"><img src="./images/servers.jpg" alt="servers"></div>
+                    <div class="features_info">
+                        <h3 class="features_title">Cloud Budget Management Software</h3>
+                        <p class="features_description">Our software is made so you can access and manage your budget</p>
+                        <a href="" class="features_link">Read more</a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section class="technology">
+        <div class="container">
+            <h2 class="technology_header">Technology</h2>
+            <div class="technology_wrapper">
+                <div class="technology_item">
+                    <p class="iterator">01</p>
+                    <div class="technology_img">
+                        <img src="./images/cloud_icon.png" alt="cloud icon">
+                    </div>
+                    <h3 class="technology_item_header">Cloud Storage</h3>
+                    <p class="technology_description">Access your account from anywhere in the world on any device</p>
+                </div>
+                <div class="technology_item">
+                    <p class="iterator">02</p>
+                    <div class="technology_img">
+                        <img src="./images/search_icon.png" alt="search icon">
+                    </div>
+                    <h3 class="technology_item_header">Secure</h3>
+                    <p class="technology_description">All your information is stored on secure cloud servers</p>
+                </div>
+                <div class="technology_item">
+                    <p class="iterator">03</p>
+                    <div class="technology_img">
+                        <img src="./images/pdf_icon.png" alt="pdf icon">
+                    </div>
+                    <h3 class="technology_item_header">PDF Download</h3>
+                    <p class="technology_description">Download any of your reports in PDF format</p>
+                </div>
+                <div class="technology_item">
+                    <p class="iterator">04</p>
+                    <div class="technology_img">
+                        <img src="./images/csv_icon.png" alt="csv icon">
+                    </div>
+                    <h3 class="technology_item_header">CSV Download</h3>
+                    <p class="technology_description">All your information is stored on secure cloud servers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="download">
         <div class="container wrap">
-            <div class="save_description">
-                <h1 class="save_header">Stay focused on saving money</h1>
-                <div class="save_text">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</div>
-                <div class="save_links">
+            <div class="download_description">
+                <h1 class="download_header">Stay focused on saving money</h1>
+                <div class="download_text">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</div>
+                <div class="download_links">
                     <a href="#" target="_blank">
                         <img src="./images/google-play_icon.svg" alt="Google play">
                     </a>
@@ -26,10 +165,10 @@
                     </a>
                 </div>
             </div>
-            <div class="save_images">
-                <div class="save_img save_img-1"><img src="./images/bg_left.jpg" alt="video left" class="bottom_left"></div>
-                <div class="save_img save_img-2"><img src="./images/bg_right.jpg" alt="video right" class="bottom_right"></div>
-                <div class="save_img save_img-3"><img src="./images/bg_main.png" alt="video main" class="top"></div>
+            <div class="download_images">
+                <div class="download_img download_img-1"><img src="./images/bg_left.jpg" alt="video left" class="bottom_left"></div>
+                <div class="download_img download_img-3"><img src="./images/bg_main.png" alt="video main" class="top"></div>
+                <div class="download_img download_img-2"><img src="./images/bg_right.jpg" alt="video right" class="bottom_right"></div>
             </div>
         </div>
     </section>
@@ -93,6 +232,21 @@
             <p class="footer_copywrite">Copyright 2018 CloudBudget</p>
         </div>
     </footer>
-    <script src="./scripts/slider.js"></script>
+    <div class="overlay">
+        <div class="enter">
+            <div class="close">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <form>
+                <p><label for="login">User name:</label></p>
+                <p><input type="text" name="name" id="login"></p>
+                <p><label for="pass">Password:</label></p>
+                <p><input type="password" name="password" id="pass"></p>
+                <input type="submit" name="enter" value="Log in">
+                <p class="error"></p>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
