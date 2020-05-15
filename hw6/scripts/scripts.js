@@ -41,8 +41,8 @@ window.onload = function(){
             //     behavior: 'smooth',
             // });
             targetEl = document.querySelector(blockID).getBoundingClientRect().top;
-            targetEl-=130;
-            window.scrollBy(0, targetEl)
+            targetEl-=160;
+            window.scrollBy(0, targetEl);
 
         })
         
