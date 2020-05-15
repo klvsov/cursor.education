@@ -41,7 +41,7 @@ window.onload = function(){
             //     behavior: 'smooth',
             // });
             targetEl = document.querySelector(blockID).getBoundingClientRect().top;
-            targetEl-=100;
+            targetEl-=130;
             window.scrollBy(0, targetEl)
 
         })
