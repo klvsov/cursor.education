@@ -37,11 +37,14 @@ window.onload = function(){
             e.preventDefault()
             let blockID = anchor.getAttribute('href')
             
-            document.querySelector(blockID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                alignToTop: true
-            })
+            // document.querySelector(blockID).scrollIntoView({
+            //     behavior: 'smooth',
+            // });
+            targetEl = document.querySelector(blockID).getBoundingClientRect().top;
+            targetEl-=100;
+            window.scrollBy(0, targetEl)
+
         })
+        
     }
 }
