@@ -31,7 +31,7 @@ window.addEventListener('load', function(){
     })
 
     for(let j = 0; j < dots.length; j++){
-        dots[j].addEventListener('click', function(e){
+        dots[j].addEventListener('click', function(){
             slides[i].style.opacity = '0';
             slides[i].style.transform = 'translateX(50%)';
             dots[i].classList.remove('active');
