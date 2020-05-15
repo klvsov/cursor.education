@@ -1,9 +1,8 @@
-window.onload = function(){
+window.addEventListener('load', function(){
     let slides = document.querySelectorAll('.testimonials .testimonial_item');
     let prevBtn = document.querySelector('.controls_btn .prev');
     let nextBtn = document.querySelector('.controls_btn .next');
     let dots = document.querySelectorAll('.dots span');
-
     let i = 0
     nextBtn.addEventListener('click', function(){
         slides[i].style.opacity = '0';
@@ -31,6 +30,18 @@ window.onload = function(){
         dots[i].classList.add('active');
     })
 
+    for(let j = 0; j < dots.length; j++){
+        dots[j].addEventListener('click', function(e){
+            slides[i].style.opacity = '0';
+            slides[i].style.transform = 'translateX(50%)';
+            dots[i].classList.remove('active');
+            i = j;
+            slides[j].style.opacity = '1';
+            slides[j].style.transform = 'translateX(0)';
+            dots[j].classList.add('active');
+        })
+    }
+
     let anchors = document.querySelectorAll('a.scroll');
     for (let anchor of anchors) {
         anchor.addEventListener('click', function (e) {
@@ -47,4 +58,4 @@ window.onload = function(){
         })
         
     }
-}
+})

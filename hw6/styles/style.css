@@ -389,6 +389,7 @@ header .btn .btn_demo:hover, .try .try_demo:hover{
 .testimonials .controls .dots{
     font-size: 1.5rem;
     color: #fff;
+    cursor: pointer;
 }
 
 .active{
