@@ -392,8 +392,14 @@ header .btn .btn_demo:hover, .try .try_demo:hover{
     cursor: pointer;
 }
 
+.testimonials .dots{
+    display: flex;
+    align-items: center;
+}
+
 .active{
     color: #F063B8;
+    font-size: 2.5rem;
 }
 
 .testimonials .controls .prev, .testimonials .controls .next{
@@ -555,8 +561,7 @@ footer .chat{
     align-items: center;
     width: 60px;
     height: 60px;
-    background: #212353;
-    opacity: 0.1;
+    background: #4b5d6859;
     border-radius: 50%;
     cursor: pointer;
 }
