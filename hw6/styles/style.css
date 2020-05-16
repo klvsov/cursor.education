@@ -65,20 +65,14 @@ a:hover{
     font-size: 20px;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background: rgba(255, 255, 255, 0.95);
-    z-index: 99;
-    transition: top 1s;
-}
-
 .container{
     max-width: 1117px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.active_link{
+    font-weight: bolder;
 }
 
 header .header_wrapper{

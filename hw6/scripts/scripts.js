@@ -47,12 +47,8 @@ window.addEventListener('load', function(){
         anchor.addEventListener('click', function (e) {
             e.preventDefault()
             let blockID = anchor.getAttribute('href')
-            
-            // document.querySelector(blockID).scrollIntoView({
-            //     behavior: 'smooth',
-            // });
             targetEl = document.querySelector(blockID).getBoundingClientRect().top;
-            targetEl-=200;
+            targetEl-=20;
             window.scrollBy(0, targetEl);
 
         })
