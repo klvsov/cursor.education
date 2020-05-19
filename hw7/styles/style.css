@@ -102,7 +102,6 @@ header .logo img, .exit:hover img, .nav__item img:hover{
     padding: 18px 20px 18px 8px;
     background: #F5F5F7;
     border-radius: 14px;
-    max-height: 80px;
 }
 
 .current-course__icon{
@@ -570,6 +569,26 @@ header .logo img, .exit:hover img, .nav__item img:hover{
 
     .all-courses__item__btn{
         margin-left: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .hello__img{
+        display: none;
+    }
+
+    .hello__header{
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .current-course{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .current-course__btn{
         margin-top: 20px;
     }
 }
