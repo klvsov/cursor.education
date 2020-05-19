@@ -591,4 +591,48 @@ header .logo img, .exit:hover img, .nav__item img:hover{
     .current-course__btn{
         margin-top: 20px;
     }
+
+    .course-statistic{
+        flex-wrap: wrap;
+        justify-content: center;
+        ;
+    }
+
+    .course-statistic__complete, .course-statistic__progress{
+        min-width: 210px;
+        margin-top: 20px;
+        margin-right: 0
+    }
+
+    .statistics .header{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .header__search{
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header .nav__item{
+        margin-right: 20px;
+    }
+
+    .current-course{
+        justify-content: center;
+    }
+
+    .current-course__progress{
+        margin-top: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width:360px){
+    .current-course__descr{
+        margin-right: 10px;
+    }
 }
