@@ -154,6 +154,7 @@ header .logo img, .exit:hover img, .nav__item img:hover{
     color: #FFFFFF;
     padding: 13px 32px;
     cursor: pointer;
+    outline: none;
 }
 
 .current-course__btn button:hover, .all-courses__item__btn button:hover{
@@ -175,6 +176,7 @@ header .logo img, .exit:hover img, .nav__item img:hover{
     border-radius: 100px;
     margin-right: 8px;
     cursor: pointer;
+    outline: none;
 }
 
 .all-courses{
@@ -331,6 +333,11 @@ header .logo img, .exit:hover img, .nav__item img:hover{
     right: -10px;
 }
 
+.header__notification span:hover{
+    background: rgba(255,0,0,.5);
+    transition: 1s;
+}
+
 .header_profile{
     display: flex;
     justify-content: center;
@@ -473,6 +480,7 @@ header .logo img, .exit:hover img, .nav__item img:hover{
     color: #FFFFFF;
     padding: 13px 32px;
     cursor: pointer;
+    outline: none;
 }
 
 .premium__btn button:hover{
