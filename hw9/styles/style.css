@@ -284,13 +284,13 @@ html{
 }
 
 .start{
-    padding-top: 215px;
     padding-bottom: 170px;
     position: relative;
     overflow: hidden;
 }
 
 .start__pre-header{
+    padding-top: 215px;
     max-width: 480px;
     font-weight: bold;
     font-size: 16px;
@@ -424,6 +424,7 @@ html{
     position: absolute;
     top: -540px;
     right: -608px;
+    z-index: -1;
 }
 
 .circle_bell{
@@ -437,6 +438,7 @@ html{
     background: #fff;
     transform: translate(24px, 145px);
     box-shadow: 0 0 5px #000;
+    z-index: ;
 }
 
 .circle_bell:hover, .circle_exit:hover{
@@ -979,12 +981,15 @@ footer .social>.social__icon{
 @media (max-width:925px){
 
     .start{
-        padding-top: 30px;
         padding-bottom: 500px; 
     }
 
     .start>.wrapper{
         background: #fff;
+    }
+
+    .start__pre-header{
+        padding-top: 30px;
     }
 
     .start__pre-header, 
