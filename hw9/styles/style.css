@@ -438,7 +438,7 @@ html{
     background: #fff;
     transform: translate(24px, 145px);
     box-shadow: 0 0 5px #000;
-    z-index: ;
+    z-index: -1;
 }
 
 .circle_bell:hover, .circle_exit:hover{
