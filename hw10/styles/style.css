@@ -6,6 +6,10 @@ body{
     background: #fafafa;
 }
 
+header{
+    border-bottom: 1px solid #DBDBDB;
+}
+
 .nav-search{
     border: 1px solid #DBDBDB;
     background-color: transparent;
@@ -21,6 +25,10 @@ body{
 }
 
 .nav-search:focus{
+    background: none;
+}
+
+.bgNone{
     background: none;
 }
 
@@ -93,6 +101,10 @@ body{
     color: #FFFFFF;
 }
 
+.btn{
+    margin-right: 5px;
+}
+
 .custom-color{
     font-size: 17px;
     line-height: 21px;
@@ -152,6 +164,8 @@ h3.user-name{
     max-width: 80px;
     height: 80px;
     border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #DBDBDB;
 }
 
 .story-item img:hover{
@@ -193,4 +207,13 @@ h3.user-name{
 
 .photo-2{
     background: url('../images/bg2.jpg');
+}
+
+.nav-tabs .nav-link img{
+    margin-right: 10px;
+}
+
+.valign{
+    display: flex;
+    align-items: center;
 }
