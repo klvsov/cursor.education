@@ -150,6 +150,10 @@ h3.user-name{
         text-align: center;
         margin-right: 0;
     }
+
+    .main_mt{
+        margin: 30px auto auto 0;
+    }
 }
 
 .stories{
