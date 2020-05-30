@@ -1,0 +1,236 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu_button{
+    width: 370px;
+    height: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 25px;
+    background: #000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grip{
+    width: 50px;
+    height: 10px;
+    background: #fff;
+}
+
+.blade{
+    width: 250px;
+    height: 10px;
+    margin-left: 20px;
+    background: #fff;
+}
+
+.sword-1{
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.sword-2{
+    transform: none;
+    transition: transform 2s;
+}
+
+.sword-3{
+    transform: none;
+    transition: transform 2s;
+}
+
+.sword-2 .blade{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.box2, .sword-2:hover{
+    box-shadow: 0 0 30px 5px red;
+}
+
+.sword-2:hover ~.sword-3,
+.sword-3:hover{
+    box-shadow: 0 0 30px 5px green;
+}
+
+#sword-1_animate{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#sword-2_animate{
+    transform: rotate(45deg);
+    transition: transform 2s;
+}
+
+#sword-3_animate{
+    transform: translate(-5px, -106px) rotate(-45deg);
+    transition: transform 2s;
+}
+
+.newtone{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.shadows{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow{
+    width: 50px;
+    height: 1px;
+    background: #333;
+    filter: blur(2px);
+}
+
+.circle-1{
+    background: rgb(47, 79, 109);
+    animation-name: leftCircle;
+    animation-delay: .25;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.shadows .shadow:first-child{
+    animation-name: leftShadow;
+    animation-duration: .5s;
+    animation-delay: .25;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.circle-7{
+    animation-name: rightCircle;
+    animation-duration: .5s;
+    animation-delay: .5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.shadows .shadow:last-child{
+    animation-name: rightShadow;
+    animation-duration: .5s;
+    animation-delay: .5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.circle-2{
+    background: linear-gradient(rgb(40, 66, 92), rgb(51, 62, 85));
+}
+
+.circle-3{
+    background: linear-gradient(rgb(92, 56, 64), rgb(118, 53, 54));
+}
+
+.circle-4{
+    background: linear-gradient(rgb(94, 55, 43), rgb(114, 52, 54));
+}
+
+.circle-5{
+    background: linear-gradient(rgb(127, 50, 49), rgb(144, 53, 44));
+}
+
+.circle-6{
+    background: linear-gradient(rgb(159, 45, 37), rgb(177, 43, 31));
+}
+
+.circle-7{
+    background: linear-gradient(rgb(180, 43, 31), rgb(179, 49, 36));
+}
+
+@keyframes leftCircle{
+    0%{
+        transform: translate(0, 0);
+    }
+
+    10%{
+        transform: translate(0, 0);
+    }
+
+    50%{
+        transform: translate(-30px, -30px);
+    }
+
+
+    90%{
+        transform: translate(-50px, -50px);
+    }
+
+    100%{
+        transform: translate(-50px, -50px);
+    }
+}
+
+@keyframes rightCircle{
+    0%{
+        transform: translate(0, 0);
+    }
+
+    10%{
+        transform: translate(0, 0);
+    }
+
+    50%{
+        transform: translate(30px, -30px);
+    }
+
+    90%{
+        transform: translate(50px, -50px);
+    }
+
+    100%{
+        transform: translate(50px, -50px);
+    }
+}
+
+@keyframes leftShadow{
+    0%{
+        transform: translatex(0);
+    }
+
+    100%{
+        transform: translatex(-50px);
+    }
+}
+
+@keyframes rightShadow{
+    0%{
+        transform: translatex(0);
+    }
+
+    100%{
+        transform: translatex(50px);
+    }
+}
