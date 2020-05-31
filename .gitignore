@@ -1,3 +1,4 @@
 *.code-workspace
-test_gulp/
 node_modules/
+package.json
+package-lock.json
