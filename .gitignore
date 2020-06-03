@@ -1,4 +1,3 @@
 *.code-workspace
 node_modules/
-package.json
-package-lock.json
+hw12.1/
