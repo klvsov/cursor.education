@@ -1,0 +1,87 @@
+.buttonsSmall__tabs_tab{
+    padding: 9px 24px;
+}
+
+.tab-1{
+    background-color: #18A0FB;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid transparent;
+    color: #fff;
+    margin-right: -5px;
+    outline: none;
+
+    &:hover{
+        background-color: #18A0FBAA;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #81A0FB;
+    }
+}
+
+.tab-2{
+    border: 1px solid grey;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+
+    &:hover{
+        background-color: darkgrey;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: lightgrey;
+    }
+}
+
+.buttonsSmall__btnWithoutImg_dangerSearch{
+    margin-left: 65px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;   
+    border: none;
+    outline: none;
+    background: url('../img/search.svg'), #FF3E1D;
+    background-repeat: no-repeat;
+    background-position: 6px;
+
+    &:hover{
+        background-color: #FF3E1DAA;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #922714;
+    }
+
+    @media (max-width: 900px){
+        margin-left: 20px;
+    }
+}
+
+.buttonsSmall__btnWithoutImg_successSearch{
+    margin-left: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;   
+    border: none;
+    outline: none;
+    background: url('../img/search.svg'), #00D200;
+    background-repeat: no-repeat;
+    background-position: 12px;
+
+    &:hover{
+        background-color: #00D200AA;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #0c8a0c;
+    }
+
+    @media (max-width: 900px){
+        margin-left: 20px;
+    }
+}
+

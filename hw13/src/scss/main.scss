@@ -1,0 +1,103 @@
+@import './blocks/buttonsBig.scss';
+@import './blocks/tabsBig.scss';
+@import './blocks/buttonsBigRight.scss';
+@import './blocks/buttonsBigLeft.scss';
+@import './blocks/tab2Col.scss';
+@import './blocks/tab3Col.scss';
+@import './blocks/buttonsSmall.scss';
+@import './blocks/tab2ColSmall.scss';
+@import './blocks/buttonsSmallRight.scss';
+@import './blocks/buttonsSmallLeft.scss';
+@import './blocks/tab3ColSmallSearch.scss';
+@import './blocks/tab3ColSmallSizes.scss';
+@import './blocks/tagsBig.scss';
+@import './blocks/tagsSmall.scss';
+
+html, button, input{
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 20px auto 0;
+
+  .container__buttonsBigHeader,
+  .container__buttonsSmallHeader{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2C2C2C;
+  }
+
+  .container__buttonsSmallHeader{
+    margin-top: 75px;
+  }
+
+  .container__buttonsBig,
+  .container__buttonsSmall{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (max-width: 900px){
+      justify-content: center;
+    }
+  }
+
+  .buttonsBig__btnWithImg,
+  .buttonsBig__tab2Col,
+  .buttonsBig__tab3Col{
+    margin-top: 24px;
+  }
+
+  .buttonsBig__btnWithoutImg,
+  .buttonsBig__btnWithImg{
+    margin-right: 130px;
+
+    @media (max-width: 1150px){
+      margin-right: 20px;
+    }
+
+    @media (max-width: 900px){
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .buttonsSmall__btnWithoutImg,
+  .buttonssmall__btnWithImg{
+    margin-left: 10px;
+    margin-right: 120px;
+
+    @media (max-width: 1150px){
+      margin-right: 20px;
+    }
+
+    @media (max-width: 900px){
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .buttonssmall__btnWithImg,
+  .buttonsSmall__tab3Col{
+    margin-top: 30px;
+  }
+
+  .buttonsSmall__tab2Col{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (max-width: 836px){
+      margin-top: 10px;
+    }
+  }
+
+  .container__tagsBig,
+  .container__tagsSmall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

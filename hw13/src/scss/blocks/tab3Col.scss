@@ -1,0 +1,59 @@
+.buttonsBig__tabs_tab{
+    padding: 14px 48px;
+
+    @media (max-width: 350px){
+        padding: 14px 30px; 
+    }
+}
+
+.tab-1{
+    background-color: #18A0FB;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid transparent;
+    color: #fff;
+    margin-right: -5px;
+    outline: none;
+
+    &:hover{
+        background-color: #18A0FBAA;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #81A0FB;
+    }
+}
+
+.tab-2{
+    margin-right: -5px;
+    border: 1px solid grey;
+    outline: none;
+
+    &:hover{
+        background-color: darkgrey;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: lightgrey;
+    }
+}
+
+.tab-3{
+    border: 1px solid grey;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+
+    &:hover{
+        background-color: darkgrey;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: lightgrey;
+    }
+}
+
+.brNone{
+    border-radius: 0;
+}

@@ -1,0 +1,57 @@
+.tabs{
+    width: 56px;
+    height: 48px;
+    box-sizing: border-box;
+    margin-right: -5px;
+    outline: none;
+}
+
+.buttonsBig__tabs_search{
+    background: url('../img/search.svg'), #18A0FB;
+    background-repeat: no-repeat;
+    background-position:  16px 12px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid transparent;
+
+    &:hover{
+        background-color: #18A0FBAA;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #81A0FB;
+    }
+}
+
+.buttonsBig__tabs_download{
+    border: 1px solid grey;
+    background: url('../img/download.svg');
+    background-repeat: no-repeat;
+    background-position:  16px 12px;
+
+    &:hover{
+        background-color: darkgrey;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: lightgrey;
+    }
+}
+
+.buttonsBig__tabs_archived{
+    border: 1px solid grey;
+    border-radius: 0px 5px 5px 0px;
+    background: url('../img/archive.svg');
+    background-repeat: no-repeat;
+    background-position:  16px 12px;
+
+    &:hover{
+        background-color: darkgrey;
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: lightgrey;
+    }
+}

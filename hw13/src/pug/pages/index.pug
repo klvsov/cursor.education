@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap")
+        link(rel="shortcut icon", href="../../img/logo-white.png", type="image/x-icon")
+        title PUG/SCSS/BEM
+    body
+        .container
+            h2.container__buttonsBigHeader Buttons Big
+            .container__buttonsBig
+                include ../sections/buttonsBig.pug
+                include ../sections/tabsBig.pug
+                include ../sections/buttonsBigRight.pug
+                include ../sections/tab2Col.pug
+                include ../sections/buttonsBigLeft.pug
+                include ../sections/tab3Col.pug
+
+            h2.container__buttonsSmallHeader Buttons Small
+            .container__buttonsSmall
+                include ../sections/buttonsSmall.pug
+                include ../sections/tab2ColSmall.pug
+                include ../sections/buttonsSmallRight.pug
+                include ../sections/tab3ColSmallSearch.pug
+                include ../sections/buttonsSmallLeft.pug
+                include ../sections/tab3ColSmallSizes.pug
+            .container__tagsBig
+                include ../sections/tagsBig.pug
+            .container__tagsSmall
+                include ../sections/tagsSmall.pug

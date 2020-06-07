@@ -1,0 +1,54 @@
+.btn__small_left{
+    padding: 7px 6px;
+    display: inline-flex;
+    align-items: center;
+
+    &::before{
+        content: '';
+        display: inline-block;
+        margin-right: 12px;
+        width: 24px;
+        height: 24px;
+        top: calc(50% - 12px);
+    }
+
+}
+
+.btn__small_leftDanger{
+    background-color: #FF3E1D;
+
+    &:hover{
+        background-color: #FF3E1DAA;
+        border: 1px solid transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &:active{
+        color: #fff;
+        background-color: #922714;
+        border: 1px solid transparent;
+    }
+
+    &::before{
+        background-image: url('../img/download_white.svg');
+    }
+}
+
+.btn__small_leftDisabled{
+    &::before{
+        background-image: url('../img/download_light.svg');
+    }
+}
+
+.btn__small_leftSecondary{
+    &::before{
+        background-image: url('../img/download_dark.svg');
+    }
+}
+
+.btn__small_leftInfo{
+    &::before{
+        background-image: url('../img/download_blue.svg');
+    }
+}

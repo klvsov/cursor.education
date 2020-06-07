@@ -1,0 +1,39 @@
+.btn__small_right{
+    padding: 7px 6px;
+    display: inline-flex;
+    align-items: center;
+
+    &::after{
+        content: '';
+        display: inline-block;
+        margin-left: 12px;
+        width: 24px;
+        height: 24px;
+        top: calc(50% - 12px);
+    }
+
+}
+
+.btn__small_rightSuccess{
+    &::after{
+        background-image: url('../img/download_white.svg');
+    }
+}
+
+.btn__small_rightDisabled{
+    &::after{
+        background-image: url('../img/download_light.svg');
+    }
+}
+
+.btn__small_rightSecondary{
+    &::after{
+        background-image: url('../img/download_dark.svg');
+    }
+}
+
+.btn__small_rightInfo{
+    &::after{
+        background-image: url('../img/download_blue.svg');
+    }
+}

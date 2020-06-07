@@ -1,0 +1,45 @@
+.tagsSmall{
+    margin-right: auto;
+    margin-top: 15px;
+
+    @media (max-width: 900px){
+        margin: 0 auto 10px;
+    }
+}
+
+.tagsSmall__secondary{
+    padding: 6px 12px;
+    background: rgb(224, 224, 224);
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+
+    &:hover{
+        cursor: pointer;
+        background: lightgrey;
+    }
+
+    &:active{
+        background: grey;
+    }
+}
+
+.tagsSmall__active{
+    padding: 6px 12px;
+    background: #18A0FB;
+    color: #fff;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+
+    &:hover{
+        cursor: pointer;
+        background: #18A0FBAA;
+    }
+
+    &:active{
+        background: #18A0FBCC;
+    }
+}
