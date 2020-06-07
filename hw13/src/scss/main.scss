@@ -87,7 +87,7 @@ html, button, input{
   .buttonsSmall__tab2Col{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 
     @media (max-width: 836px){
       margin-top: 10px;
