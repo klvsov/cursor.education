@@ -2949,18 +2949,12 @@ img.alt_bg{
   display: none;
 }
 
-@media (max-width:768px){
-  .video #video{
-    height: auto;
-  }
+.dNone{
+  display: none;
+}
 
-  .video #video iframe{
-    display: none;
-  }
-  
-  img.alt_bg{
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+.dBlock{
+  display: block!important;
+  width: 100%;
+  height: 100%;
 }
