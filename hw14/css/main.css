@@ -2300,7 +2300,6 @@ abbr, acronym {
 
 
 /*========================== Fonts ==========================*/
-@charset "UTF-8";
 @font-face {
   font-family: 'HelveticaNeueBlack';
   src: local("☺"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.ttf") format("truetype");
@@ -2816,7 +2815,6 @@ button {
     display: block;
     text-align: right;
     margin: 10px 0 auto 0;
-    vertical-align: top;
     padding-top: 15px;
 }
 
