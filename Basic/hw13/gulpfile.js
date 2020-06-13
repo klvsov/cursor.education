@@ -50,8 +50,8 @@ gulp.task('watch', function() {
 	watch(['./build/*.html', './build/css/**/*.css'], gulp.parallel( browserSync.reload ));
 
 	watch('./src/scss/**/*.scss', function(){
-		setTimeout( gulp.parallel('scss'), 1000 )
-	})
+		setTimeout( gulp.parallel('scss'), 1000 );
+	});
 
 	watch('./src/pug/**/*.pug', gulp.parallel('pug'))
 
