@@ -1,2 +1,2 @@
 # cursor.education
-My workі while studying at school "Cursor"
+My works while studying at school "Cursor"
