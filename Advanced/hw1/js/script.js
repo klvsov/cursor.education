@@ -1,25 +1,30 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const article1 = 15.678,
-          article2 = 123.965,
-          article3 = 90.2345,
-          allTd = document.querySelectorAll('table tbody td'),
-          res = document.querySelector('.lead'),
-          maxValue = Math.max(article1, article2, article3),
-          minValue = Math.min(article1, article2, article3)
-          sumArticles = article1 + article2 + article3,
-          sumArticlesRounded = Math.trunc(article1) + Math.trunc(article2) + Math.trunc(article3),
-          sumArticlesRounded100 = Math.round(sumArticles / 100) * 100,
-          sumIsEven = sumArticlesRounded % 2 === 0 ? 'Так' : 'Ні';
-          remainder = (500 - sumArticles).toFixed(2),
-          averageValue = (sumArticles / 3).toFixed(2),
-          randomDiscount = (Math.random() * 100).toFixed(0),
-          sumWithDiscount = (sumArticles - sumArticles * randomDiscount / 100).toFixed(2),
-          profit = Math.trunc((sumArticles / 2) - (sumArticles * randomDiscount / 100));
+    const article1 = 15.678;
+    const article2 = 123.965;
+    const article3 = 90.2345;
+    const allTd = document.querySelectorAll('table tbody td');
+    const res = document.querySelector('.lead');
+    const articleFirst = document.querySelector('.article-1');
+    const articleSecond = document.querySelector('.article-2');
+    const articleThird = document.querySelector('.article-3');
+
+    const maxValue = Math.max(article1, article2, article3);
+    const minValue = Math.min(article1, article2, article3);
+    const sumArticles = article1 + article2 + article3;
+    const sumArticlesRounded = Math.trunc(article1 + article2 + article3);
+    const sumArticlesRounded100 = Math.round(sumArticles / 100) * 100;
+    const sumIsEven = sumArticlesRounded % 2 === 0 ? 'Так' : 'Ні';
+    const remainder = (500 - sumArticles).toFixed(2);
+    const averageValue = (sumArticles / 3).toFixed(2);
+    const randomDiscount = (Math.random() * 100).toFixed(0);
+    const sumWithDiscount = (sumArticles - sumArticles * randomDiscount / 100).toFixed(2);
+    const profit = Math.trunc((sumArticles / 2) - (sumArticles * randomDiscount / 100));
+    const advanced = '';
 
 
-    document.querySelector('.article-1').textContent = `Ціна першого товару - ${article1}`;
-    document.querySelector('.article-2').textContent = `Ціна другого товару - ${article2}`;
-    document.querySelector('.article-3').textContent = `Ціна третього товару - ${article3}`;
+    articleFirst.textContent = `Ціна першого товару - ${article1}`;
+    articleSecond.textContent = `Ціна другого товару - ${article2}`;
+    articleThird.textContent = `Ціна третього товару - ${article3}`;
     allTd[0].textContent = maxValue;
     allTd[1].textContent = minValue;
     allTd[2].textContent = sumArticles;
@@ -32,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     allTd[9].textContent = sumWithDiscount;
     allTd[10].textContent = profit;
 
-    const advanced = `<p>Максимальна ціна: ${maxValue}</p>
+    advanced = `<p>Максимальна ціна: ${maxValue}</p>
                       <p>Мінімальна ціна: ${minValue}</p>
                       <p>Вартість товарів: ${sumArticles}</p>
                       <p>Вартість товарів округлена: ${sumArticlesRounded}</p>
