@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const randomDiscount = (Math.random() * 100).toFixed(0);
     const sumWithDiscount = (sumArticles - sumArticles * randomDiscount / 100).toFixed(2);
     const profit = Math.trunc((sumArticles / 2) - (sumArticles * randomDiscount / 100));
-    const advanced = '';
 
 
     articleFirst.textContent = `Ціна першого товару - ${article1}`;
@@ -37,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     allTd[9].textContent = sumWithDiscount;
     allTd[10].textContent = profit;
 
-    advanced = `<p>Максимальна ціна: ${maxValue}</p>
+    const advanced = `<p>Максимальна ціна: ${maxValue}</p>
                       <p>Мінімальна ціна: ${minValue}</p>
                       <p>Вартість товарів: ${sumArticles}</p>
                       <p>Вартість товарів округлена: ${sumArticlesRounded}</p>
