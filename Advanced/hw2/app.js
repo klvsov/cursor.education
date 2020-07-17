@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     const form = document.forms[0];
-    const firstNumber = form.elements.first;
-    const lastNumber = form.elements.last;
-    const skip = form.elements.isSkip;
+    const firstNumber = document.getElementById('start');
+    const lastNumber = document.getElementById('end');
+    const skip = document.getElementById('isSkip');
     const answer = document.querySelector('.answer');
     const error = document.querySelector('.error');
     const startCalc = document.getElementById('startCalc');
