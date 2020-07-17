@@ -15,11 +15,11 @@
             <div class="col">
                 <form>
                     <div class="form-row">
-                        <div class="col-2">
+                        <div class="col-lg-2 col-md-4 col-sm-6">
                             <label for="start">First number</label>
                             <input type="number" class="form-control" placeholder="First number" id="start" name="first" value="0">
                         </div>
-                        <div class="col-2">
+                        <div class="col-lg-2 col-md-4 col-sm-6">
                             <label for="end">Last number</label>
                             <input type="number" min="0" max="1000" class="form-control" placeholder="Last number" id="end" name="last" value="0">
                         </div>
@@ -37,10 +37,14 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="alert alert-success answer d-none"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="alert alert-success answer d-none"></div>
+            </div>
         </div>
         <div class="row mt-5">
-            <div class="alert alert-danger error d-none"></div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="alert alert-danger error d-none"></div>  
+            </div>
         </div>
     </div>
     <script src="./app.js"></script>
