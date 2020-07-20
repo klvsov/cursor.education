@@ -32,6 +32,10 @@ body{
     border-color: #006957;
 }
 
+.works-item a{
+    display: block;
+}
+
 .works-item:hover a{
     color: #fff;
 }
