@@ -3,10 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="shortcut icon" href="../../assets/images/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Functions</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 1</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12"><input type="number" class="form-control form-control-lg mt-1" id="fn1" placeholder="Введіть число"></div>
+                    <div class="col-lg-6 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-1 mt-1"><i class="fas fa-check"></i></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-1 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 2</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12"><input type="number" class="form-control form-control-lg mt-1" id="fn2-1" placeholder="Основа"></div>
+                    <div class="col-lg-4 col-sm-12"><input type="number" class="form-control form-control-lg mt-1" id="fn2-2" placeholder="Степінь"></div>
+                    <div class="col-lg-4 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-2 mt-1"><i class="fas fa-check"></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-2 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 3</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn3" placeholder="Введіть ім'я"></div>
+                    <div class="col-lg-6 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-3 mt-1"><i class="fas fa-check"></i></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-3 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 4</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12"><input type="number" class="form-control form-control-lg mt-1" id="fn4-1" placeholder="Сума"></div>
+                    <div class="col-lg-4 col-sm-12"><input type="number" class="form-control form-control-lg mt-1" id="fn4-2" placeholder="Податок"></div>
+                    <div class="col-lg-4 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-4 mt-1"><i class="fas fa-check"></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-4 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 5</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12"><input type="number" class="form-control form-control-lg mt-1" id="fn5-1" placeholder="Введіть N"></div>
+                    <div class="col-lg-4 col-sm-12"><input type="number" class="form-control form-control-lg mt-1" id="fn5-2" placeholder="Введіть M"></div>
+                    <div class="col-lg-4 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-5 mt-1"><i class="fas fa-check"></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-5 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 6</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn6-1" placeholder="Буква"></div>
+                    <div class="col-lg-4 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn6-2" placeholder="Слово"></div>
+                    <div class="col-lg-4 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-6 mt-1"><i class="fas fa-check"></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-6 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 7</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn7" placeholder="Введіть суму"></div>
+                    <div class="col-lg-6 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-7 mt-1"><i class="fas fa-check"></i></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-7 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 8</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn8" placeholder="Довжина пароля"></div>
+                    <div class="col-lg-6 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-8 mt-1"><i class="fas fa-check"></i></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-8 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 9</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn9-1" placeholder="Буква"></div>
+                    <div class="col-lg-4 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn9-2" placeholder="Слово"></div>
+                    <div class="col-lg-4 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-9 mt-1"><i class="fas fa-check"></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-9 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 10</h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn10" placeholder="Значення"></div>
+                    <div class="col-lg-6 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-10 mt-1"><i class="fas fa-check"></i></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-10 d-none mt-1"></div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Завдання 11</h4>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12"><input type="text" class="form-control form-control-lg mt-1" id="fn11" placeholder="Значення"></div>
+                    <div class="col-lg-6 col-sm-12"><button type="button" class="btn btn-success btn-block btn-lg start-fn-11 mt-1"><i class="fas fa-check"></i></i></button></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success res-fn-11 d-none mt-1"></div>
+            </div>
+        </div>
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>
