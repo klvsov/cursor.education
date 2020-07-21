@@ -1,43 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    const startValue1 = document.getElementById('fn1');
-    const startValue2_1 = document.getElementById('fn2-1');
-    const startValue2_2 = document.getElementById('fn2-2');
-    const startValue3 = document.getElementById('fn3');
-    const startValue4_1 = document.getElementById('fn4-1');
-    const startValue4_2 = document.getElementById('fn4-2');
-    const startValue5_1 = document.getElementById('fn5-1');
-    const startValue5_2 = document.getElementById('fn5-2');
-    const startValue6_1 = document.getElementById('fn6-1');
-    const startValue6_2 = document.getElementById('fn6-2');
-    const startValue7 = document.getElementById('fn7');
-    const startValue8 = document.getElementById('fn8');
-    const startValue9_1 = document.getElementById('fn9-1');
-    const startValue9_2 = document.getElementById('fn9-2');
-    const startValue10 = document.getElementById('fn10');
-    const startValue11 = document.getElementById('fn11');
-    const btn1 = document.querySelector('.start-fn-1');
-    const btn2 = document.querySelector('.start-fn-2');
-    const btn3 = document.querySelector('.start-fn-3');
-    const btn4 = document.querySelector('.start-fn-4');
-    const btn5 = document.querySelector('.start-fn-5');
-    const btn6 = document.querySelector('.start-fn-6');
-    const btn7 = document.querySelector('.start-fn-7');
-    const btn8 = document.querySelector('.start-fn-8');
-    const btn9 = document.querySelector('.start-fn-9');
-    const btn10 = document.querySelector('.start-fn-10');
-    const btn11 = document.querySelector('.start-fn-11');
-    const ans1 = document.querySelector('.res-fn-1');
-    const ans2 = document.querySelector('.res-fn-2');
-    const ans3 = document.querySelector('.res-fn-3');
-    const ans4 = document.querySelector('.res-fn-4');
-    const ans5 = document.querySelector('.res-fn-5');
-    const ans6 = document.querySelector('.res-fn-6');
-    const ans7 = document.querySelector('.res-fn-7');
-    const ans8 = document.querySelector('.res-fn-8');
-    const ans9 = document.querySelector('.res-fn-9');
-    const ans10 = document.querySelector('.res-fn-10');
-    const ans11 = document.querySelector('.res-fn-11');
+    const startValue = document.querySelectorAll('.fn');
+    const answers = document.querySelectorAll('.res-fn');
 
     // Function 1
     const getMaxDigit = (number) => {
@@ -60,11 +24,11 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if(startPower > 0) {
-            return `${startValue2_1.value} в ${startValue2_2.value} степені - ${res}`;
+            return `${startValue[1].value} в ${startValue[2].value} степені - ${res}`;
         } else if(startPower < 0) {
-            return `${startValue2_1.value} в ${startValue2_2.value} степені - ${1 / res}`;
+            return `${startValue[1].value} в ${startValue[2].value} степені - ${1 / res}`;
         } else{
-            return `${startValue2_1.value} в ${startValue2_2.value} степені - 1`;
+            return `${startValue[1].value} в ${startValue[2].value} степені - 1`;
         }
 
         
@@ -186,93 +150,85 @@ window.addEventListener('DOMContentLoaded', () => {
     
     };
 
-    // Function 1 starting work
-    btn1.addEventListener('click', () => {
-        if(startValue1.value !== '') {
-            ans1.textContent = getMaxDigit(startValue1.value);
-            ans1.classList.remove('d-none');
+    document.body.addEventListener('click', (event) => {
+        if(event.target.classList.contains('start-fn-1')) {
+            if(startValue[0].value !== '') {
+                answers[0].textContent = getMaxDigit(startValue[0].value);
+                answers[0].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 2 starting work
-    btn2.addEventListener('click', () => {
-        if(startValue2_1.value !== '' && startValue2_2.value !== '') {
-            ans2.textContent = getPowNumber(startValue2_1.value, startValue2_2.value);
-            ans2.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-2')) {
+            if(startValue[1].value !== '' && startValue[2].value !== '') {
+                answers[1].textContent = getPowNumber(startValue[1].value, startValue[2].value);
+                answers[1].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 3 starting work
-    btn3.addEventListener('click', () => {
-        if(startValue3.value !== '') {
-            ans3.textContent = setNormalLookName(startValue3.value);
-            ans3.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-3')) {
+            if(startValue[3].value !== '') {
+                answers[2].textContent = setNormalLookName(startValue[3].value);
+                answers[2].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 4 starting work
-    btn4.addEventListener('click', () => {
-        if(startValue4_1.value !== '' && startValue4_2.value !== '') {
-            ans4.textContent = getResSum(startValue4_1.value, startValue4_2.value);
-            ans4.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-4')) {
+            if(startValue[4].value !== '' && startValue[5].value !== '') {
+                answers[3].textContent = getResSum(startValue[4].value, startValue[5].value);
+                answers[3].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 5 starting work
-    btn5.addEventListener('click', () => {
-        if(startValue5_1.value !== '' && startValue5_2.value !== '') {
-            ans5.textContent = `Випадкове число - ${getRandNumber(+startValue5_1.value, +startValue5_2.value)}`;
-            ans5.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-5')) {
+            if(startValue[6].value !== '' && startValue[7].value !== '') {
+                answers[4].textContent = `Випадкове число - ${getRandNumber(+startValue[6].value, +startValue[7].value)}`;
+                answers[4].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 6 starting work
-    btn6.addEventListener('click', () => {
-        if(startValue6_1.value !== '' && startValue6_2.value !== '') {
-            ans6.textContent = `Кількість - ${getCountLetter(startValue6_1.value, startValue6_2.value)}`;
-            ans6.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-6')) {
+            if(startValue[8].value !== '' && startValue[9].value !== '') {
+                answers[5].textContent = `Кількість - ${getCountLetter(startValue[8].value, startValue[9].value)}`;
+                answers[5].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 7 starting work
-    btn7.addEventListener('click', () => {
-        if(startValue7.value !== '') {
-            ans7.textContent = convertCurrency(startValue7.value);
-            ans7.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-7')) {
+            if(startValue[10].value !== '') {
+                answers[6].textContent = convertCurrency(startValue[10].value);
+                answers[6].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 8 starting work
-    btn8.addEventListener('click', () => {
-        if(startValue8.value === '') {
-            ans8.textContent = getRandomPassword();
-            ans8.classList.remove('d-none');
-        } else {
-            ans8.textContent = getRandomPassword(startValue8.value);
-            ans8.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-8')) {
+            if(startValue[11].value === '') {
+                answers[7].textContent = getRandomPassword();
+                answers[7].classList.remove('d-none');
+            } else {
+                answers[7].textContent = getRandomPassword(startValue[11].value);
+                answers[7].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 9 starting work
-    btn9.addEventListener('click', () => {
-        if(startValue9_1.value !== '' && startValue9_2.value !== '') {
-            ans9.textContent = deleteLetters(startValue9_1.value, startValue9_2.value);
-            ans9.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-9')) {
+            if(startValue[12].value !== '' && startValue[13].value !== '') {
+                answers[8].textContent = deleteLetters(startValue[12].value, startValue[13].value);
+                answers[8].classList.remove('d-none');
+            }
         }
-    });
 
-    // Function 10 starting work
-    btn10.addEventListener('click', () => {
-        if(startValue10.value !== '') {
-            ans10.textContent = isPalyndrom(startValue10.value);
-            ans10.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-10')) {
+            if(startValue[14].value !== '') {
+                answers[9].textContent = isPalyndrom(startValue[14].value);
+                answers[9].classList.remove('d-none');
+            }
         }
-    });
 
-    btn11.addEventListener('click', () => {
-        if(startValue11.value !== '') {
-            ans11.textContent = `Унікальні букви - ${deleteDuplicateLetter(startValue11.value)}`;
-            ans11.classList.remove('d-none');
+        if(event.target.classList.contains('start-fn-11')) {
+            if(startValue[15].value !== '') {
+                answers[10].textContent = `Унікальні букви - ${deleteDuplicateLetter(startValue[15].value)}`;
+                answers[10].classList.remove('d-none');
+            }
         }
     });
 });
