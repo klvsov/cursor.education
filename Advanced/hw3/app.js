@@ -52,13 +52,22 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     // Function 2
-    const getPowNumber = (base, power) => {
+    const getPowNumber = (base, startPower) => {
         let res = 1;
+        const power = Math.abs(startPower);
         for(let i = 0; i < power; i++) {
             res *= base
         }
 
-        return `${startValue2_1.value} в ${startValue2_2.value} степені - ${res}`;
+        if(startPower > 0) {
+            return `${startValue2_1.value} в ${startValue2_2.value} степені - ${res}`;
+        } else if(startPower < 0) {
+            return `${startValue2_1.value} в ${startValue2_2.value} степені - ${1 / res}`;
+        } else{
+            return `${startValue2_1.value} в ${startValue2_2.value} степені - 1`;
+        }
+
+        
     };
 
     // Function 3
