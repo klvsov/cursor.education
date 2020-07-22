@@ -4,16 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const answers = document.querySelectorAll('.res-fn');
 
     // Function 1
-    const getMaxDigit = (number) => {
-        const arr = Array.from(String(number));
-        let maxN = 0;
-        for(let i = 0; i < arr.length; i++) {
-            if(maxN < +arr[i]) {
-                maxN = arr[i];
-            }
-        }
-        return `Найбільша цифра - ${maxN}`;
-    };
+    const getMaxDigit = number => Math.max(...Array.from(String(number)).map((item) => parseInt(item)));
 
     // Function 2
     const getPowNumber = (base, startPower) => {
@@ -30,40 +21,28 @@ window.addEventListener('DOMContentLoaded', () => {
         } else{
             return `${startValue[1].value} в ${startValue[2].value} степені - 1`;
         }
-
-        
     };
 
     // Function 3
-    const setNormalLookName = (name) => {
-        let res = '';
-        res = name[0].toUpperCase() + name.slice(1).toLowerCase(); 
-
-        return `Форматоване ім'я - ${res}`;
-    };
+    const setNormalLookName = name => `Форматоване ім'я - ${name[0].toUpperCase() + name.slice(1).toLowerCase()}`;
 
     // Function 4
     const getResSum = (startSum, tax) => {
-        const resSum = startSum - (startSum * (tax / 100));
+        const persent = 100;
+        const resSum = startSum - (startSum * (tax / persent));
 
         return `Кінцева сума - ${resSum}`;
     };
 
     // Function 5
-    const getRandNumber = (min, max) => {
-        const res = Math.floor(min + Math.random() * (max + 1 - min));
-
-        return res;
-    };
+    const getRandNumber = (min, max) => Math.floor(min + Math.random() * (max + 1 - min));
 
     // Function 6
     const getCountLetter = (startLetter, startWord) => {
         let res = 0;
-        let letter = startLetter.toLowerCase();
-        let word = '';
-        for( let i = 0; i < startWord.length; i++) {
-            word += startWord[i].toLowerCase();
-        }
+        const letter = startLetter.toLowerCase();
+        const word = startWord.toLowerCase();
+
         for(let i = 0; i < word.length; i++) {
             if(letter === word[i]) {
                 res++;
@@ -77,11 +56,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const convertCurrency = (sum) => {
         let res = 0;
         const money = parseFloat(sum);
+        const currencyCoefficient = 25;
 
         if(sum.includes('$')) {
-            res = `Конвертована сума - ${money * 25} грн`;
+            res = `Конвертована сума - ${money * currencyCoefficient} грн`;
         } else if(sum.substr(-3, 3).toLowerCase() === 'uah') {
-            res = `Конвертована сума - ${money / 25}$`;
+            res = `Конвертована сума - ${money / currencyCoefficient}$`;
         } else{
             res = 'Некоректне значення!';
         }
@@ -94,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let res = '';
         
         for(let i = 0; i < len; i++) {
-            res += getRandNumber(0, 9);
+            res += getRandNumber(0, 9); // Функція з завдання №5 повертає випадкову цифру - тому від 0 до 9 (використовую готову функцію, щоб не створювати ще раз подібну)
         }
 
         return `Випадковий пароль - ${res}`;
@@ -115,21 +95,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Function 10
     const isPalyndrom = (word) => {
-        let res = '';
-        
-        for(let i = 0; i < word.length; i++) {
-            if(word[i] !== ' ') {
-                res += word[i].toLowerCase();
-            }
-        }
+        const res = word.replace(/\s+/g, '').toLowerCase();
+        const reverseWord = res.split('').reverse().join('').toLowerCase();
 
-        const reverseWord = res.split('').reverse().join('')
-
-        if(reverseWord === res) {
-            return 'Паліндром';
-        } else {
-            return 'Не паліндром';
-        }
+        return reverseWord === res ? 'Паліндром' : 'Не паліндром';
     };
 
     // Function 11
@@ -153,7 +122,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('click', (event) => {
         if(event.target.classList.contains('start-fn-1')) {
             if(startValue[0].value !== '') {
-                answers[0].textContent = getMaxDigit(startValue[0].value);
+                answers[0].textContent = `Найбільша цифра - ${getMaxDigit(startValue[0].value)}`;
                 answers[0].classList.remove('d-none');
             }
         }
