@@ -104,11 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Function 11
     const deleteDuplicateLetter = (firstWord) => {
         let answer = '';
-        let word = '';
-
-        for(let i = 0; i < firstWord.length; i++) {
-            word += firstWord[i].toLowerCase();
-        }
+        const word = firstWord.toLowerCase();
 
         for(let i = 0; i < word.length; i++) {
             if(getCountLetter(word[i], word) === 1) {
