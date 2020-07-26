@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () =>{
         }
         let len = studentsArr.length / 2 //Оскільки в кінцевий масив додаються одразу два студенти, потрібно проходити цикл тільки до половини
         for(let i = 0; i < len; i++) {
-            res.push([boys[i] + ' і ' + girls[i]]);
+            res.push([`${boys[i]} і ${girls[i]}`]);
         }
         
         return res;
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     const getPairsAndThemes = (arr, sub) => {
         let res = [];
         for(let i = 0; i < arr.length; i++) {
-            res.push([arr[i] + ', ' + sub[i]]);
+            res.push([`${arr[i]}, ${sub[i]}`]);
         }
         return res;
     }
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     const setMark = (arr, mark) => {
         let res = [];
         for(let i = 0; i < arr.length; i++) {
-            res.push([arr[i] + ' - ' + mark[i]])
+            res.push([`${arr[i]} - ${mark[i]}`])
         }
         return res;
     }
@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     const setRandMark = (arr) => {
         let res = [];
         for (item of arr) {
-            res.push([item + ', оцінка за проєкт - ' + getRandNumber(1, 5)]); // випадкові оцінки в діапазоні від 1 до 5
+            res.push([`${item}, оцінка за проєкт - ${getRandNumber(1, 5)}`]); // випадкові оцінки в діапазоні від 1 до 5
         }
 
         return res;
