@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../assets/images/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Array iteration methods</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="mt-5">Масив випадкових чисел</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Довжина масиву" type="number" class="form-control form-control-lg mt-1 fn-1" placeholder="Довжина">
+                <input title="Мінімальне значення" type="number" class="form-control form-control-lg mt-1 fn-1" placeholder="Мінімальне значення">
+                <input title="Максимальне значення" type="number" class="form-control form-control-lg mt-1 fn-1" placeholder="Максимальне значення">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-1 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-1 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Мода числового ряду</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть значення числового ряду через кому" type="text" class="form-control form-control-lg mt-1 fn-2" placeholder="Числовий ряд через кому">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-2 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-2 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Середнє арифметичне числового ряду</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть значення числового ряду через кому" type="text" class="form-control form-control-lg mt-1 fn-3" placeholder="Числовий ряд через кому">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-3 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-3 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Медіана числового ряду</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть значення числового ряду через кому" type="text" class="form-control form-control-lg mt-1 fn-4" placeholder="Числовий ряд через кому">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-4 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-4 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Фільтрація парних чисел</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть значення числового ряду через кому" type="text" class="form-control form-control-lg mt-1 fn-5" placeholder="Числовий ряд через кому">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-5 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-5 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Кількість додатніх чисел</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть значення числового ряду через кому" type="text" class="form-control form-control-lg mt-1 fn-6" placeholder="Числовий ряд через кому">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-6 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-6 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Числа, кратні 5</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть значення числового ряду через кому" type="text" class="form-control form-control-lg mt-1 fn-7" placeholder="Числовий ряд через кому">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-7 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-7 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Заміна "поганих" слів</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть початкове речення" type="text" class="form-control form-control-lg mt-1 fn-8" placeholder="Початкове речення">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-8 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-8 d-none mt-1"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Розкладання слова на склади</h3>
+        <div class="row mt-3">
+            <div class="col-lg-6 col-sm-12">
+                <input title="Введіть початкове значення" type="text" class="form-control form-control-lg mt-1 fn-9" placeholder="Початкове значення">
+                <button type="button" class="btn btn-success btn-block btn-lg start-fn-9 mt-1">Виконати <i class="fas fa-check"></i></button>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-success res-fn-9 d-none mt-1"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
