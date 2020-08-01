@@ -36,10 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
         return arr.join(', ');
     };
 
-    const getModa = (...numbers) =>{
-        return convertToInteger(numbers).sort((a,b) => numbers.filter(item => item === a).length - numbers
-        .filter(item => item === b).length).pop();
-    };
+    const getModa = (...numbers) => convertToInteger(numbers)
+                    .sort((a, b) => numbers.filter(item => item === b).length - numbers.filter(item => item === a).length)[0];
 
     const getAverage = (...numbers) => {
         const arr = convertToInteger(numbers);
