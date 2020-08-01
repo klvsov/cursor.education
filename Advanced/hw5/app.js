@@ -26,7 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const task9 = document.querySelector('.fn-9');
     const answerTask9 = document.querySelector('.res-fn-9');
 
-    const getRandNumber = (min, max) => ` ${Math.floor(min + Math.random() * (max + 1 - min))}`;
+    const getRandNumber = (min, max) => Math.floor(min + Math.random() * (max + 1 - min));
+    const convertToInteger = (arr) => arr.filter(item => Number.isInteger(item));
 
     const getRandomArray = (length, min, max) => {
         const arr = [];
@@ -36,13 +37,12 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     const getModa = (...numbers) =>{
-        return numbers.filter(item => Number.isInteger(item))
-            .sort((a,b) => numbers.filter(item => item === a).length - numbers.filter(item => item === b).length)
-            .pop()
+        return convertToInteger(numbers).sort((a,b) => numbers.filter(item => item === a).length - numbers
+        .filter(item => item === b).length).pop();
     };
 
     const getAverage = (...numbers) => {
-        const arr = numbers.filter(item => Number.isInteger(item));
+        const arr = convertToInteger(numbers);
         const total = arr.reduce((sum, current) => sum + current, 0);
         const averageN = total / arr.length;
 
@@ -50,8 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     const getMedian = (...numbers) => {
-        const arr = numbers.filter(item => Number.isInteger(item));
-        arr.sort((a, b) => a - b);
+        const arr = convertToInteger(numbers);
         if(arr.length % 2) {
             return arr[(arr.length - 1) / 2];
         } else{
@@ -81,7 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     document.querySelector('.start-fn-1').addEventListener('click', () => {
-        answerTask1.textContent = getRandomArray(parseInt(task1[0].value), parseInt(task1[1].value), parseInt(task1[2].value))     
+        answerTask1.textContent = `Масив випадкових чисел - ${getRandomArray(parseInt(task1[0].value), parseInt(task1[1].value), parseInt(task1[2].value))}`;     
         answerTask1.classList.remove('d-none');
     });
 
