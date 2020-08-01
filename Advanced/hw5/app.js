@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const arr = [];
         for(let i = 0; i < length; i++) {
             arr.push(getRandNumber(min, max))}
-        return arr;
+        return arr.join(', ');
     };
 
     const getModa = (...numbers) =>{
