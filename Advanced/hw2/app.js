@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const form = document.forms[0];
     const firstNumber = document.getElementById('start');
     const lastNumber = document.getElementById('end');
     const skip = document.getElementById('isSkip');
