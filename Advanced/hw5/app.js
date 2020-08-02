@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     const getMedian = (...numbers) => {
-        const arr = convertToInteger(numbers);
+        const arr = convertToInteger(numbers).sort( (a,b) => a -b);
         if(arr.length % 2) {
             return arr[(arr.length - 1) / 2];
         } else{
