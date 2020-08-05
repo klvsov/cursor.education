@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Closure. Context</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="mt-5">Find tax in select country</h3>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-sm-12">
+                <input type="number" class="form-control fn-1" placeholder="Type your salary">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-info mt-1 ukr-1">Ukraine</button>
+                    <button type="button" class="btn btn-info mt-1 lat-1">Latvia</button>
+                    <button type="button" class="btn btn-info mt-1 lit-1">Litva</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-info res-1 d-none"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Find middle taxes in select country</h3>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-sm-12">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-info mt-1 ukr-2">Ukraine</button>
+                    <button type="button" class="btn btn-info mt-1 lat-2">Latvia</button>
+                    <button type="button" class="btn btn-info mt-1 lit-2">Litva</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-info res-2 d-none"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Find total taxes in select country</h3>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-sm-12">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-info mt-1 ukr-3">Ukraine</button>
+                    <button type="button" class="btn btn-info mt-1 lat-3">Latvia</button>
+                    <button type="button" class="btn btn-info mt-1 lit-3">Litva</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="alert alert-info res-3 d-none"></div>
+            </div>
+        </div>
+        <h3 class="mt-5">Find my salary in select country</h3>
+        <div class="row mt-2 mb-3">
+            <div class="col-12">
+                <div class="btn_wrap">
+                    <button type="button" class="btn btn-info mt-1 ukr-4">Ukraine</button>
+                    <button type="button" class="btn btn-info mt-1 lat-4">Latvia</button>
+                    <button type="button" class="btn btn-info mt-1 lit-4">Litva</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="./app.js"></script>
+</body>
+</html>

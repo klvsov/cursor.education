@@ -1,0 +1,13 @@
+.btn_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    flex-grow: 0.5;
+    margin: 10px
+}
+
+input{
+    padding: 1.5em!important;
+}
