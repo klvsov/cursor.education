@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
         return `salary: ${salary}, taxes: ${taxes.toFixed(2)}, profit: ${profit.toFixed(2)}`;
     };
 
-    // const timerIdUkr = setInterval(() => console.log(getMySalary(ukraine)), 10000);
+
 
     start_1_ukr.addEventListener('click', () => {
         if(value_1.value !== ''){
@@ -97,21 +97,31 @@ window.addEventListener('DOMContentLoaded', () => {
         res3.classList.remove('d-none');
     });
 
+    let timerIdUkr;
+    let timerIdLat;
+    let timerIdLit;
+
     start_4_ukr.addEventListener('click', () => {
+        clearInterval(timerIdLat);
+        clearInterval(timerIdLit);
         res4.textContent = getMySalary(ukraine);
         res4.classList.remove('d-none');
-        const timerIdUkr2 = setInterval(() => res4.textContent = (getMySalary(ukraine)), 10000);
+        timerIdUkr = setInterval(() => res4.textContent = (getMySalary(ukraine)), 10000);
     });
 
     start_4_lat.addEventListener('click', () => {
+        clearInterval(timerIdUkr);
+        clearInterval(timerIdLit);
         res4.textContent = getMySalary(latvia);
         res4.classList.remove('d-none');
-        const timerIdUkr2 = setInterval(() => res4.textContent = (getMySalary(latvia)), 10000);
+        timerIdLat = setInterval(() => res4.textContent = (getMySalary(latvia)), 10000);
     });
 
     start_4_lit.addEventListener('click', () => {
+        clearInterval(timerIdUkr);
+        clearInterval(timerIdLat);
         res4.textContent = getMySalary(litva);
         res4.classList.remove('d-none');
-        const timerIdUkr2 = setInterval(() => res4.textContent = (getMySalary(litva)), 10000);
+        timerIdLit = setInterval(() => res4.textContent = (getMySalary(litva)), 10000);
     });
 });
