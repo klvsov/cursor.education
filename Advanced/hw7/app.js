@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const start_3_ukr = document.querySelector('.ukr-3');
     const start_3_lat = document.querySelector('.lat-3');
     const start_3_lit = document.querySelector('.lit-3');
+    const res4 = document.querySelector('.res-4');
     const start_4_ukr = document.querySelector('.ukr-4');
     const start_4_lat = document.querySelector('.lat-4');
     const start_4_lit = document.querySelector('.lit-4');
@@ -97,17 +98,20 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     start_4_ukr.addEventListener('click', () => {
-        console.log(getMySalary(ukraine));
-        const timerIdUkr = setInterval(() => console.log(getMySalary(ukraine)), 10000);
+        res4.textContent = getMySalary(ukraine);
+        res4.classList.remove('d-none');
+        const timerIdUkr2 = setInterval(() => res4.textContent = (getMySalary(ukraine)), 10000);
     });
 
     start_4_lat.addEventListener('click', () => {
-        console.log(getMySalary(latvia));
-        const timerIdLat = setInterval(() => console.log(getMySalary(latvia)), 10000);
+        res4.textContent = getMySalary(latvia);
+        res4.classList.remove('d-none');
+        const timerIdUkr2 = setInterval(() => res4.textContent = (getMySalary(latvia)), 10000);
     });
 
     start_4_lit.addEventListener('click', () => {
-        console.log(getMySalary(litva));
-        const timerIdLit = setInterval(() => console.log(getMySalary(litva)), 10000);
+        res4.textContent = getMySalary(litva);
+        res4.classList.remove('d-none');
+        const timerIdUkr2 = setInterval(() => res4.textContent = (getMySalary(litva)), 10000);
     });
 });
