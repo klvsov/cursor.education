@@ -23,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const start_4_ukr = document.querySelector('.ukr-4');
     const start_4_lat = document.querySelector('.lat-4');
     const start_4_lit = document.querySelector('.lit-4');
-    const stopInterval = document.querySelector('.stop');
 
     const getMyTaxes = function(salary) {
         return salary * this.tax;

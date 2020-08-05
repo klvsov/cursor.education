@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7a407da-c673-40a9-8703-3c0eeada03f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Advanced/hw7/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw7/app.js" afterDir="false" />
-    </list>
+    <list default="true" id="d7a407da-c673-40a9-8703-3c0eeada03f4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +20,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -31,7 +30,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596624042829</updated>
-      <workItem from="1596624045816" duration="269000" />
+      <workItem from="1596624045816" duration="631000" />
     </task>
     <servers />
   </component>
