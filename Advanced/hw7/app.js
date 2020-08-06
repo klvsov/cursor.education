@@ -44,7 +44,9 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
 
-
+    value_1.addEventListener('input', () => {
+        res1.classList.add('d-none');
+    });
     start_1_ukr.addEventListener('click', () => {
         if(value_1.value !== ''){
             res1.textContent = `${getMyTaxes.call(ukraine, parseFloat(value_1.value))} USD`;
@@ -67,32 +69,32 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     start_2_ukr.addEventListener('click', () => {
-        res2.textContent = `${getMiddleTaxes.call(ukraine).toFixed(2)} USD`;
+        res2.textContent = `${parseFloat(getMiddleTaxes.call(ukraine).toFixed(2))} USD`;
         res2.classList.remove('d-none');
     });
 
     start_2_lat.addEventListener('click', () => {
-        res2.textContent = `${getMiddleTaxes.call(latvia).toFixed(2)} USD`;
+        res2.textContent = `${parseFloat(getMiddleTaxes.call(latvia).toFixed(2))} USD`;
         res2.classList.remove('d-none');
     });
 
     start_2_lit.addEventListener('click', () => {
-        res2.textContent = `${getMiddleTaxes.call(litva).toFixed(2)} USD`;
+        res2.textContent = `${parseFloat(getMiddleTaxes.call(litva).toFixed(2))} USD`;
         res2.classList.remove('d-none');
     });
 
     start_3_ukr.addEventListener('click', () => {
-        res3.textContent = `${getTotalTaxes.call(ukraine).toFixed(2)} USD`;
+        res3.textContent = `${parseFloat(getTotalTaxes.call(ukraine).toFixed(2))} USD`;
         res3.classList.remove('d-none');
     });
 
     start_3_lat.addEventListener('click', () => {
-        res3.textContent = `${getTotalTaxes.call(latvia).toFixed(2)} USD`;
+        res3.textContent = `${parseFloat(getTotalTaxes.call(latvia).toFixed(2))} USD`;
         res3.classList.remove('d-none');
     });
 
     start_3_lit.addEventListener('click', () => {
-        res3.textContent = `${getTotalTaxes.call(litva).toFixed(2)} USD`;
+        res3.textContent = `${parseFloat(getTotalTaxes.call(litva).toFixed(2))} USD`;
         res3.classList.remove('d-none');
     });
 
