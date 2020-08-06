@@ -42,11 +42,11 @@ window.addEventListener('DOMContentLoaded', () =>{
 
     const getSubjects = (student) => {
       const subjects = Object.keys(student.subjects);
-      return subjects.map(item => item.slice(0,1).toUpperCase()+item.slice(1).replace(/_/g, ' '));
+      return subjects.map(item => item.slice(0,1).toUpperCase()+item.toLowerCase().slice(1).replace(/_/g, ' '));
     };
 
     const getAverageMark = (student) => {
-      const marks = Object.values(JSON.parse(JSON.stringify(student.subjects))).flat();
+      const marks = Object.values(student.subjects).flat();
       const averageMark = marks.reduce((sum, current) => sum + current, 0) / marks.length;
       return averageMark.toFixed(2);
     };
@@ -57,9 +57,7 @@ window.addEventListener('DOMContentLoaded', () =>{
       return `Name - ${name}, course - ${course}, average mark - ${getAverageMark(student)}`
     };
 
-    const getStudentsNames = (students) => {
-      return students.map(student => student.name).sort()
-    };
+    const getStudentsNames = students => students.map(student => student.name).sort();
 
     const getBestStudent = (students) => {
       const names = students.map(student => student.name);
@@ -95,6 +93,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     }
 
     $start_task1.addEventListener('click', () => {
+      $task1.classList.toggle('d-none');
       if(!($task1.childNodes.length)) {
         for (let key of students){  
           $task1.innerHTML += `
@@ -113,6 +112,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     });
 
     $start_task2.addEventListener('click', () => {
+      $task2.classList.toggle('d-none');
       if(!($task2.childNodes.length)) {
         for (let key of students){
           $task2.innerHTML += `
@@ -131,10 +131,11 @@ window.addEventListener('DOMContentLoaded', () =>{
     });
 
     $start_task3.addEventListener('click', () => {
+      $task3.classList.toggle('d-none');
       if(!($task3.childNodes.length)) {
         for (let key of students){
           $task3.innerHTML += `
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-4 col-sm-12 fn-1">
               <p class="alert alert-success">${getStudentInfo(key)}</p>
             </div>
             </div>`;
@@ -143,14 +144,19 @@ window.addEventListener('DOMContentLoaded', () =>{
     });
 
     $start_task4.addEventListener('click', () => {
+      $task4.classList.toggle('d-none');
       $task4.innerHTML = `<div class="col"><p class="alert alert-success">${getStudentsNames(students).join(', ')}</p></div>`
     });
 
     $start_task5.addEventListener('click', () => {
+      $task5.classList.toggle('d-none');
       $task5.innerHTML = `<div class="col"><p class="alert alert-success">${getBestStudent(students)}</p></div>`
     });
 
     $start_task6.addEventListener('click', () => {
+      $task6.addEventListener('input', () => {
+        $res_task6.classList.add('d-none')
+      });
       if($task6.value) {
         $res_task6.textContent = objToString(calculateWordLetters($task6.value));
         $res_task6.classList.remove('d-none');
