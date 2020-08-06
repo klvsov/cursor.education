@@ -1,5 +1,3 @@
 *.code-workspace
 node_modules/
-hw10.1/
-hw12.1/
-hw14.1/
+.idea/
