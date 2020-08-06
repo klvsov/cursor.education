@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     };
 
     const objToString = (object) => {
-      var str = '';
+      let str = '';
       for (const k in object) {
         if (object.hasOwnProperty(k)) {
           str += `"${k}" - ${object[k]}, `
