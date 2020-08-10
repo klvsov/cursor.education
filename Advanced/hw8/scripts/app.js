@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        set newMark(val) {
+        set mark(val) {
             if (this.isNormalStudent) {
                 this.allMarks.push(parseInt(val));
                 return this.allMarks;
@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (studentsNewMark.value) {
             res3.classList.remove('d-none');
             if (student.isNormalStudent) {
-                student.newMark = studentsNewMark.value;
+                student.mark = studentsNewMark.value;
                 res3.textContent = `Всі оцінки - ${student.allMarks}`;
             } else {
                 res3.textContent = `Всі оцінки - ${null}`;
