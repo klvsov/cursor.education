@@ -88,77 +88,79 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', function(e) {
         outputKey.textContent = e.key;
-        if (e.code == 'KeyA') {
-            playSound('./sound/B3.mp3');
-        }
-        if(e.code == 'KeyQ') {
-            playSound('./sound/B4.mp3');
-        }
-        if(e.code == 'KeyS') {
-            playSound('./sound/C4.mp3');
-        }
-        if(e.code == 'KeyW') {
-            playSound('./sound/Cs3.mp3');
-        }
-        if(e.code == 'KeyD') {
-            playSound('./sound/D3.mp3');
-        }
-        if(e.code == 'KeyF') {
-            playSound('./sound/D4.mp3');
-        }
-        if(e.code == 'KeyE') {
-            playSound('./sound/Ds4.mp3');
-        }
-        if(e.code == 'KeyG') {
-            playSound('./sound/Ds5.mp3');
-        }
-        if(e.code == 'KeyR') {
-            playSound('./sound/E2.mp3');
-        }
-        if(e.code == 'KeyH') {
-            playSound('./sound/E3.mp3');
-        }
-        if(e.code == 'KeyT') {
-            playSound('./sound/E4.mp3');
-        }
-        if(e.code == 'KeyJ') {
-            playSound('./sound/E5.mp3');
-        }
-        if(e.code == 'KeyK') {
-            playSound('./sound/F2.mp3');
-        }
-        if(e.code == 'KeyY') {
-            playSound('./sound/F4.mp3');
-        }
-        if(e.code == 'KeyL') {
-            playSound('./sound/Fs2.mp3');
-        }
-        if(e.code == 'KeyU') {
-            playSound('./sound/Fs4.mp3');
-        }
-        if(e.code == 'KeyZ') {
-            playSound('./sound/G2.mp3');
-        }
-        if(e.code == 'KeyX') {
-            playSound('./sound/G3.mp3');
-        }
-        if(e.code == 'KeyI') {
-            playSound('./sound/G4.mp3');
-        }
-        if(e.code == 'KeyC') {
-            playSound('./sound/G5.mp3');
-        }
-        if(e.code == 'KeyO') {
-            playSound('./sound/Gs2.mp3');
-        }
-        if(e.code == 'KeyV') {
-            playSound('./sound/Gs3.mp3');
-        }
-        if(e.code == 'KeyP') {
-            playSound('./sound/Gs4.mp3');
-        }
-        if(e.code == 'KeyB') {
-            playSound('./sound/Gs5.mp3');
+        switch(e.code){
+            case 'KeyA':
+                playSound('./sound/B3.mp3');
+                break;
+            case 'KeyQ':
+                playSound('./sound/B4.mp3');
+                break;
+            case 'KeyS':
+                playSound('./sound/C4.mp3');
+                break;
+            case 'KeyW':
+                playSound('./sound/Cs3.mp3');
+                break;
+            case 'KeyD':
+                playSound('./sound/D3.mp3');
+                break;
+            case 'KeyF':
+                playSound('./sound/D4.mp3');
+                break;
+            case 'KeyE':
+                playSound('./sound/Ds4.mp3');
+                break;
+            case 'KeyG':
+                playSound('./sound/Ds5.mp3');
+                break;
+            case 'KeyR':
+                playSound('./sound/E2.mp3');
+                break;
+            case 'KeyH':
+                playSound('./sound/E3.mp3');
+                break;
+            case 'KeyT':
+                playSound('./sound/E4.mp3');
+                break;
+            case 'KeyJ':
+                playSound('./sound/E5.mp3');
+                break;
+            case 'KeyK':
+                playSound('./sound/F2.mp3');
+                break;
+            case 'KeyY':
+                playSound('./sound/F4.mp3');
+                break;
+            case 'KeyL':
+                playSound('./sound/Fs2.mp3');
+                break;
+            case 'KeyU':
+                playSound('./sound/Fs4.mp3');
+                break;
+            case 'KeyZ':
+                playSound('./sound/G2.mp3');
+                break;
+            case 'KeyX':
+                playSound('./sound/G3.mp3');
+                break;
+            case 'KeyI':
+                playSound('./sound/G4.mp3');
+                break;
+            case 'KeyC':
+                playSound('./sound/G5.mp3');
+                break;
+            case 'KeyO':
+                playSound('./sound/Gs2.mp3');
+                break;
+            case 'KeyV':
+                playSound('./sound/Gs3.mp3');
+                break;
+            case 'KeyP':
+                playSound('./sound/Gs4.mp3');
+                break;
+            case 'KeyB':
+                playSound('./sound/Gs5.mp3');
+                break;
         }
     });
 });
