@@ -12,10 +12,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const getRandomChinese = length => {
         return new Promise((resolve) => {
             res = '';
-            for(let i = 0; i < length; i++) {
-                let time = parseInt(String(Date.now()).slice(-5));
+            let i = 0;
+            let time = parseInt(String(Date.now()).slice(-5));
+            while(i < length){
+                time += creating_char;
                 res += getRandomChar(time);
-                console.log(time, getRandomChar(time));
+                i++;
             }
             setTimeout(() => {
                 resolve()
