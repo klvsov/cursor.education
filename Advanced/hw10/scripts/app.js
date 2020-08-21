@@ -86,80 +86,114 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    console.log(allKeys);
+
+    document.addEventListener('keyup', () => {
+        allKeys.forEach(key => key.classList.remove('pressed'))
+    });
+
+    document.addEventListener('keyup', () => {
+        allKeys.forEach(key => key.classList.remove('pressed-black'))
+    });
+
     document.addEventListener('keydown', function(e) {
         outputKey.textContent = e.key;
         switch(e.code){
             case 'KeyA':
                 playSound('./sound/B3.mp3');
+                allKeys[0].classList.add('pressed');
                 break;
             case 'KeyQ':
                 playSound('./sound/B4.mp3');
+                allKeys[1].classList.add('pressed-black');
                 break;
             case 'KeyS':
                 playSound('./sound/C4.mp3');
+                allKeys[2].classList.add('pressed');
                 break;
             case 'KeyW':
                 playSound('./sound/Cs3.mp3');
+                allKeys[3].classList.add('pressed-black');
                 break;
             case 'KeyD':
                 playSound('./sound/D3.mp3');
+                allKeys[4].classList.add('pressed');
                 break;
             case 'KeyF':
                 playSound('./sound/D4.mp3');
+                allKeys[5].classList.add('pressed');
                 break;
             case 'KeyE':
                 playSound('./sound/Ds4.mp3');
+                allKeys[6].classList.add('pressed-black');
                 break;
             case 'KeyG':
                 playSound('./sound/Ds5.mp3');
+                allKeys[7].classList.add('pressed');
                 break;
             case 'KeyR':
                 playSound('./sound/E2.mp3');
+                allKeys[8].classList.add('pressed-black');
                 break;
             case 'KeyH':
                 playSound('./sound/E3.mp3');
+                allKeys[9].classList.add('pressed');
                 break;
             case 'KeyT':
                 playSound('./sound/E4.mp3');
+                allKeys[10].classList.add('pressed-black');
                 break;
             case 'KeyJ':
                 playSound('./sound/E5.mp3');
+                allKeys[11].classList.add('pressed');
                 break;
             case 'KeyK':
                 playSound('./sound/F2.mp3');
+                allKeys[12].classList.add('pressed');
                 break;
             case 'KeyY':
                 playSound('./sound/F4.mp3');
+                allKeys[13].classList.add('pressed-black');
                 break;
             case 'KeyL':
                 playSound('./sound/Fs2.mp3');
+                allKeys[14].classList.add('pressed');
                 break;
             case 'KeyU':
                 playSound('./sound/Fs4.mp3');
+                allKeys[15].classList.add('pressed-black');
                 break;
             case 'KeyZ':
                 playSound('./sound/G2.mp3');
+                allKeys[16].classList.add('pressed');
                 break;
             case 'KeyX':
                 playSound('./sound/G3.mp3');
+                allKeys[17].classList.add('pressed');
                 break;
             case 'KeyI':
                 playSound('./sound/G4.mp3');
+                allKeys[18].classList.add('pressed-black');
                 break;
             case 'KeyC':
                 playSound('./sound/G5.mp3');
+                allKeys[19].classList.add('pressed');
                 break;
             case 'KeyO':
                 playSound('./sound/Gs2.mp3');
+                allKeys[20].classList.add('pressed-black');
                 break;
             case 'KeyV':
                 playSound('./sound/Gs3.mp3');
+                allKeys[21].classList.add('pressed');
                 break;
             case 'KeyP':
                 playSound('./sound/Gs4.mp3');
+                allKeys[22].classList.add('pressed-black');
                 break;
             case 'KeyB':
                 playSound('./sound/Gs5.mp3');
+                allKeys[23].classList.add('pressed');
                 break;
         }
     });
