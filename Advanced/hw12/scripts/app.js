@@ -14,8 +14,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const toSecureUrl = link => (link[4].toLowerCase() === 's') ? link : link.slice(0,4) + 's' + link.slice(4);
     const getData = (url) => {
-        const trueUrl = toSecureUrl(url);
-        return fetch(trueUrl)
+        const link = toSecureUrl(url);
+        console.log(link);
+        return fetch(link)
             .then(data => data.json())
     }
 
