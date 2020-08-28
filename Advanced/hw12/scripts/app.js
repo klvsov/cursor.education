@@ -84,9 +84,13 @@ window.addEventListener('DOMContentLoaded', () => {
             <button type="button" class="btn btn-info next">Next page</button>
         `;
 
-        document.querySelector('.prev').addEventListener('click', () => {
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        prevBtn.addEventListener('click', () => {
             if(planetsPage > 1) {
                 getPlanets(--planetsPage).then(renderPlanets);
+            } else {
+                prevBtn.setAttribute('disabled', 'disabled')
             }
         });
 
@@ -95,8 +99,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 .then(data => {
                     const allPages = data.count / 10;
                     if(planetsPage < allPages) {
-                    getPlanets(++planetsPage).then(renderPlanets);
-                }
+                        getPlanets(++planetsPage).then(renderPlanets);
+                    } else {
+                        nextBtn.setAttribute('disabled', 'disabled')
+                    }
                 });
                 
         });
