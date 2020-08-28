@@ -24,9 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     }
     const getData = url => {
-        const link = toSecureUrl(url);
-        console.log(link);
-        return fetch(link)
+        return fetch(url)
             .then(data => data.json())
     }
 
@@ -43,8 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const getCharacters = () => {
-        return getData(`${allEpisodes}/${episodes.value}`)
-            .then(data => (data.characters).map(getData))
+        return getData(`${allEpisodes}/${episodes.value}/`)
+            .then(data => toSecureUrl(data.characters).map(getData))
             .then(data => Promise.all(data))
             .then(data => data.map(item => {
                 return {
