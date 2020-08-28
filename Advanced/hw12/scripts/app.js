@@ -12,8 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const allEpisodes = 'https://swapi.dev/api/films';
     const pageForPlanets = 'https://swapi.dev/api/planets/';
 
+    const toSecureUrl = link => (link[4].toLowerCase() === 's') ? url : url.slice(0,4) + 's' + url.slice(4);
     const getData = (url) => {
-        return fetch(url)
+        const trueUrl = toSecureUrl(url);
+        return fetch(trueUrl)
             .then(data => data.json())
     }
 
