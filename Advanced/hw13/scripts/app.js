@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let up;
     let startFontSize = 14;
+    text.style.fontSize = '14px';
 
     function* newFontGenerator() {
         while(true) {
