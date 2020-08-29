@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        document.querySelector('.next').addEventListener('click', () => {
+        nextBtn.addEventListener('click', () => {
             getData(pageForPlanets)
                 .then(data => {
                     const allPages = data.count / 10;
