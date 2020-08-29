@@ -34,6 +34,8 @@ window.addEventListener('DOMContentLoaded', () => {
         up = true;
         if(text.style.fontSize !== '50px') {
             text.style.fontSize = `${fontGenerator.next().value}px`;
+        } else {
+            alert('Stop!!!')
         }
     });
 
@@ -41,6 +43,8 @@ window.addEventListener('DOMContentLoaded', () => {
         up = false;
         if(text.style.fontSize !== '4px') {
             text.style.fontSize = `${fontGenerator.next().value}px`;
+        } else {
+            alert('Stop!!!')
         }
     });
 });
