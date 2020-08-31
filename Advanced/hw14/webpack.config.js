@@ -1,12 +1,28 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: 'main.js',
+        publicPath: '/dist'
     },
+    devServer: {
+        overlay: true
+    },
+    plugins: [
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+          title: 'Cursor',
+          template: './index.html'
+        }),
+        new MiniCssExtractPlugin({
+          filename: '[name].css',
+        })
+    ],
     module: {
         rules: [
             {

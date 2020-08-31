@@ -7,5 +7,22 @@ body{
 }
 
 .logo img{
+    width: 450px;
+    max-width: 100%;
+}
+
+.res-fn-7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     max-width: 300px;
+    margin: 0 auto;
+}
+
+.block{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    background-color: darkcyan;
 }
