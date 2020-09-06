@@ -86,8 +86,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    console.log(allKeys);
-
     document.addEventListener('keyup', () => {
         allKeys.forEach(key => key.classList.remove('pressed'))
     });

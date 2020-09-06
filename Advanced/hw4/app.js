@@ -78,5 +78,3 @@ console.log(students);
 console.log(themes);
 console.log(marks);
 console.groupEnd();
-
-export {students, printRes, getPairs, pairs};

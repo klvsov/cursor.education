@@ -1,0 +1,1 @@
+export const getMaxDigit = number => Math.max(...Array.from(String(number)).map((item) => parseInt(item)));

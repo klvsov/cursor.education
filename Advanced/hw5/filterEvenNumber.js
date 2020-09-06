@@ -1,0 +1,1 @@
+export const filterEvenNumbers = (...numbers) => numbers.filter(item => item % 2).join(', ');

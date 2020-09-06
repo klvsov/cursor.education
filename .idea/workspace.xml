@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8c41287-fb99-4e71-943b-0f6ec3396b1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Advanced/hw15/src/components/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw10/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw10/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw12/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw12/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw13/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw13/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw14/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw14/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw14/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw14/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw14/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw14/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw3/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw3/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw4/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw4/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/hw5/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/hw5/app.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h8HuT18QSFJWPa8UggF8Faq2TZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reacts-works" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8c41287-fb99-4e71-943b-0f6ec3396b1b" name="Default Changelist" comment="" />
+      <created>1599386031852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599386031852</updated>
+      <workItem from="1599386034513" duration="1573000" />
+      <workItem from="1599387808854" duration="946000" />
+      <workItem from="1599393824470" duration="122000" />
+      <workItem from="1599400664989" duration="566000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="274" key="FileChooserDialogImpl" timestamp="1599401874950">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599401874950" />
+  </component>
+</project>

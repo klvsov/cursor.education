@@ -5,6 +5,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const downSize = document.querySelector('.sizeDown');
     const text = document.querySelector('.fn-2');
 
+    let isFontIncrease;
+    let startFontSize = 14;
+    text.style.fontSize = '14px';
+
     function* createIdGenerator() {
         let i = 1;
         while(true) {
@@ -12,13 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    let up;
-    let startFontSize = 14;
-    text.style.fontSize = '14px';
-
     function* newFontGenerator() {
         while(true) {
-            up ? yield startFontSize += 2 : yield startFontSize -= 2;
+            isFontIncrease ? yield startFontSize += 2 : yield startFontSize -= 2;
         }
     }
 
@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     upSize.addEventListener('click', () => {
-        up = true;
+        isFontIncrease = true;
         if(text.style.fontSize !== '50px') {
             text.style.fontSize = `${fontGenerator.next().value}px`;
         } else {
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     downSize.addEventListener('click', () => {
-        up = false;
+        isFontIncrease = false;
         if(text.style.fontSize !== '4px') {
             text.style.fontSize = `${fontGenerator.next().value}px`;
         } else {

@@ -7,10 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const allPlanets = document.querySelector('.planets');
     const start_fn_3 = document.querySelector('.start-fn-3');
 
-    const BASE = 'https://swapi.dev/api/';
     const films = 'https://swapi.dev/api/films/';
     const allEpisodes = 'https://swapi.dev/api/films';
     const pageForPlanets = 'https://swapi.dev/api/planets/';
+    let planetsPage = 1;
 
     const toSecureUrl = link => {
         return link.map(el => {
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const renderEpisodes = (episode) => {
-        document.querySelector('.episodes').innerHTML = `
+        episodes.innerHTML = `
             <option selected disabled>Select episode</option>
             ${episode}
         `
@@ -69,7 +69,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }).join('');
     }
     
-    let planetsPage = 1
     const getPlanets = currentPage => {
         return getData(`${pageForPlanets}?page=${currentPage}`)
             .then(data => data.results.map(planet => `<li class="list-group-item">${planet.name}</li>`).join(''))
